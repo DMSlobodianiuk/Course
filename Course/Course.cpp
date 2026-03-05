@@ -6,8 +6,13 @@ int main()
 {
 	//section_6_practice();
 	//section_7_practice();
-	section_8_practice();
-	
+	//section_8_practice();
+	//letter_grade_selection();
+	//enum_direction_example();
+	//conditional_operator_case_1();
+	//conditional_operator_case_2();
+	//for_loop_case_1();
+
 	system("pause");
 } 
 
