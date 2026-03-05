@@ -140,3 +140,48 @@ void for_loop_case_1() {
 		(i % 2 != 0) ? sum += i : 0;
 		
 }
+
+void range_base_for_loop_case_1() {
+
+	std::vector<double> temps{ 87.2, 77.1, 80.0, 72.5 };
+
+	double average_temp{};
+	double running_sum{};
+
+	for (auto temp : temps)
+		running_sum += temp;
+
+	average_temp = running_sum / temps.size();
+
+	cout << "Sum: " << running_sum << "\nSize: " << temps.size() << "\nAverage: " << average_temp << endl;
+}
+
+void range_base_for_loop_case_2() {
+
+	double running_sum{};
+	double average_temp{};
+	int size{ 0 };
+
+	for (auto temp : { 60.2, 80.1, 90.0, 78.2 }) {
+		running_sum += temp;
+		size += 1;
+	}
+
+	average_temp = running_sum / size;
+
+	cout << "Sum: " << running_sum << "\nSize: " << size << "\nAverage: " << average_temp << endl;
+}
+
+void range_base_for_loop_case_3() {
+	for (auto c : "Frank")
+		cout << c << " ";
+}
+
+void range_base_for_loop_case_4() {
+	
+	std::vector<int> vec{ 1,3,5,15,16,17,18,19,20,21,25,26,27,30,50,55,56,58,100,200,300,400,500,600,700 };
+
+	int count{ 0 };
+	for (auto el : vec)
+		((el % 3 == 0) || (el % 5 == 0)) ? (count += 1) : 0;
+}
