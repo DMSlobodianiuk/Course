@@ -1,3 +1,3 @@
 #pragma once
 
-void section_8_practice();
+void section_8_challenge();

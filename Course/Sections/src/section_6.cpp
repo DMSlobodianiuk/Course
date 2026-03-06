@@ -1,4 +1,3 @@
-//Section 6
 #include <iostream>
 
 const double per_small_room{ 25 };
@@ -6,7 +5,7 @@ const double per_large_room{ 35 };
 const double tax{ 0.06 };
 const int estimate{ 30 };
 
-void section_6_practice()
+void section_6_challenge()
 {
 
 	std::cout << "Hello, welcome to Dmytro's Carpet Cleaning Service.\n\n";

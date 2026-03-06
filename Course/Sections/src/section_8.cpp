@@ -10,7 +10,7 @@ using std::endl;
 //	1 nickel is 5 cents
 //	1 penny is 1 cent
 
-void section_8_practice()
+void section_8_challenge()
 {
 	int cents{ 0 };
 	cout << "Enter an amount in cents : ";
