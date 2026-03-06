@@ -5,7 +5,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-void section_7_practice()
+void section_7_challenge()
 {
 	vector<int> vector1;
 	vector<int> vector2;
