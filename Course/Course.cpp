@@ -32,6 +32,11 @@ int main()
 	//nested_loops_case_3();
 	//section_9_challenge();
 
+	//section 10
+	//c_style_case_1();
+	//cpp_strings_case_1();
+	//section_10_challenge();
+
 	system("pause");
 } 
 

@@ -124,12 +124,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp" />
+    <ClCompile Include="Sections\src\section_10.cpp" />
     <ClCompile Include="Sections\src\section_7.cpp" />
     <ClCompile Include="Sections\src\section_6.cpp" />
     <ClCompile Include="Sections\src\section_8.cpp" />
     <ClCompile Include="Sections\src\section_9.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Sections\include\section_10.h" />
     <ClInclude Include="Sections\include\section_6.h" />
     <ClInclude Include="Sections\include\section_7.h" />
     <ClInclude Include="Sections\include\section_8.h" />
