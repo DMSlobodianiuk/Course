@@ -163,3 +163,46 @@ void section_10_challenge() {
 	}
 	cout << "Your encrypted message is: " << encrypted << endl;
 }
+void section_10_assignment_1()
+{
+	//examples to save time
+	//string input{"12345"};
+	//string input{"ABCDEFG"};
+	//string input{"C++isFun!"};
+	//string input({ "ABCDEFGHIJKLMNOPQRSTUVWXYZ" });
+
+	string input;
+	cout << "Please, enter a string to pyramid it: ";
+	getline(cin, input);
+
+	string first_output{ "" };
+	string second_output{ "" };
+
+	int up{ 0 };
+
+	for (int i{ 0 }; i < input.length(); i++) {
+		up = 0;
+		first_output = "";
+
+		for (int spaces{ (int)input.length() }; 0 < spaces - i - 1; spaces--)
+			cout << " ";
+
+		for (int j{ 0 }; j < i * 2 + 1; j++) {
+			if (up <= i) {
+				first_output += input.at(up);
+				up += 1;
+			}
+		}
+		
+		if (i != 0) {
+			second_output = "";
+			for (int j{ (int)first_output.length() -1 }; 0 < j; j--)
+				second_output += first_output.at(j-1);
+		}
+
+		string final_output{ first_output + second_output };
+
+		cout << final_output;
+		cout << endl;
+	}
+}
