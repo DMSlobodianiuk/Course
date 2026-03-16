@@ -37,6 +37,14 @@ int main()
 	//cpp_strings_case_1();
 	//section_10_challenge();
 	//section_10_assignment_1();
+	
+	//section 11
+	//cmath_case_1();
+	//cstlib_case_1();
+	//default_case_1();
+	//default_case_2();
+	//overloading_case_1();
+	passing_arrays_case_1();
 
 	system("pause");
 } 
