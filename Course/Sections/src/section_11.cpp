@@ -132,3 +132,29 @@ void passing_arrays_case_1() {
 	set_array(my_scores, 5, 6);
 	print_array(my_scores, 5);
 }
+
+
+void pass_by_ref_1(int&);
+void pass_by_ref_2(std::string&);
+
+void pass_by_ref_1(int& n) {
+	n = n * n;
+}
+void pass_by_ref_2(std::string& s) {
+	s = "value after";
+}
+
+void pass_by_reference_case_1() {
+
+	int n{ 25 };
+	cout << "Value before: " << n << endl;
+	pass_by_ref_1(n);
+	cout << "Value after: " << n<< endl;
+
+	cout << "---------------------------\n";
+
+	std::string s{ "(string before)" };
+	cout << "Value before: " << s << endl;
+	pass_by_ref_2(s);
+	cout << "Value after: " << s<< endl;
+}

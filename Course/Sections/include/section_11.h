@@ -6,3 +6,4 @@ void default_case_1();
 void default_case_2();
 void overloading_case_1();
 void passing_arrays_case_1();
+void pass_by_reference_case_1();

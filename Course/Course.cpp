@@ -44,7 +44,8 @@ int main()
 	//default_case_1();
 	//default_case_2();
 	//overloading_case_1();
-	passing_arrays_case_1();
+	//passing_arrays_case_1();
+	pass_by_reference_case_1();
 
 	system("pause");
 } 
