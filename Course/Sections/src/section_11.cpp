@@ -133,7 +133,6 @@ void passing_arrays_case_1() {
 	print_array(my_scores, 5);
 }
 
-
 void pass_by_ref_1(int&);
 void pass_by_ref_2(std::string&);
 
@@ -157,4 +156,51 @@ void pass_by_reference_case_1() {
 	cout << "Value before: " << s << endl;
 	pass_by_ref_2(s);
 	cout << "Value after: " << s<< endl;
+}
+
+void scope_rule_case_1() {
+	int a{ 5 };
+	cout << a << endl;
+}
+
+inline int add_numbers(int a, int b) {
+	return a + b;
+}
+void inline_case_1() {
+	int res{ 0 };
+	cout << "res before add_number: " << res << endl;
+	res = add_numbers(100, 200);
+	cout << "res after add_number: " << res << endl;
+}
+
+unsigned long long factorial(unsigned long long n) {
+	if (n == 0)
+		return 1;
+	else
+		return n * factorial(n - 1);
+}
+unsigned long fibo(long n) {
+	if (n == 0)
+		return 0;
+	
+	if (n <= 1)
+		return 1;
+	
+	return fibo(n - 1) + fibo(n - 2);
+}
+
+void recursive_case_1() {
+	int n{ -1 };
+	cout << "Factorial of " << n << "! = " << factorial(n) << endl;
+}
+void recursive_case_2() {
+	int n{ 40 };
+	cout << "The " << n << "th Fibonacci number is " << fibo(n) << endl;
+}
+ 
+void section_11_challenge() {
+
+
+
+
 }
