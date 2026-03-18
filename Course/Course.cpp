@@ -1,7 +1,6 @@
 #include <iostream>
 #include ".\Sections\sections.h"
 
-
 int main()
 {
 	//section 6
@@ -45,7 +44,13 @@ int main()
 	//default_case_2();
 	//overloading_case_1();
 	//passing_arrays_case_1();
-	pass_by_reference_case_1();
+	//pass_by_reference_case_1();
+	//scope_rule_case_1();
+	//inline_case_1();
+	//recursive_case_1();
+	//recursive_case_2();
+	section_11_challenge();
+
 
 	system("pause");
 } 
