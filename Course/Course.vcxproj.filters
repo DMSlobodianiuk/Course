@@ -45,6 +45,9 @@
     <ClCompile Include="Sections\src\section_10.cpp">
       <Filter>Sections\src</Filter>
     </ClCompile>
+    <ClCompile Include="Sections\src\section_12.cpp">
+      <Filter>Sections\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sections\include\section_7.h">
@@ -66,6 +69,9 @@
       <Filter>Sections\include</Filter>
     </ClInclude>
     <ClInclude Include="Sections\include\section_10.h">
+      <Filter>Sections\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\section_12.h">
       <Filter>Sections\include</Filter>
     </ClInclude>
   </ItemGroup>
