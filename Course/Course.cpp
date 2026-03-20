@@ -1,7 +1,6 @@
 #include <iostream>
 #include ".\Sections\sections.h"
 
-
 int main()
 {
 	//section 6
@@ -61,7 +60,13 @@ int main()
 	//pointer_arithmetic_case_1();
 	//pointer_arithmetic_case_2();
 	//pointer_arithmetic_case_3();
+	//pass_pointers_to_functions_case_1();
+	//pass_pointers_to_functions_case_2();
+	//returning_pointers_case_1();
+	//returning_pointers_case_2();
+	//section_12_exercise_33();
+	section_12_exercise_34();
+
 
 	//system("pause");
 } 
-
