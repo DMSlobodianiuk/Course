@@ -47,8 +47,20 @@ int main()
 	//passing_arrays_case_1();
 
 	//section 12
+	//pointers_case_1();
+	//pointers_case_2();
+	//pointers_case_3();
+	//pointers_case_4();
+	//pointers_case_5();
+	//dynanmic_memory_allocation_case_1();
+	//dynanmic_memory_allocation_case_2();
+	//relationship_between_arrays_pointers_case_1();
+	//relationship_between_arrays_pointers_case_2();
+	//relationship_between_arrays_pointers_case_3();
+	//relationship_between_arrays_pointers_case_4();
+	//pointer_arithmetic_case_1();
+	//pointer_arithmetic_case_2();
 
-
-	system("pause");
+	//system("pause");
 } 
 
