@@ -13,3 +13,4 @@ void relationship_between_arrays_pointers_case_3();
 void relationship_between_arrays_pointers_case_4();
 void pointer_arithmetic_case_1();
 void pointer_arithmetic_case_2();
+void pointer_arithmetic_case_3();
