@@ -228,3 +228,110 @@ void pointer_arithmetic_case_3() {
 	cout << "After swap\n" << "a: " << a<<" b: " << b << endl;
 
 }
+
+void double_data(int* int_ptr) {
+	*int_ptr *= 2;
+}
+void pass_pointers_to_functions_case_1() {
+	int value{ 10 };
+	int* int_ptr{ nullptr };
+
+	cout << "Value: " << value << endl;
+	double_data(&value);
+	cout << "Value: " << value << endl;
+
+	cout << "\n---------------------------------\n";
+	int_ptr = &value;
+	double_data(int_ptr);
+	cout << "Value: " << value << endl;
+
+}
+
+void swap(int* a, int* b) {
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
+void pass_pointers_to_functions_case_2() {
+	int x{ 100 }, y{ 200 };
+	cout << "Before swap:\n";
+	cout << "x: " << x << " y: " << y << endl;
+
+	swap(&x, &y);
+
+	cout << "\nAfter swap:\n";
+	cout << "x: " << x << " y: " << y << endl;
+
+}
+
+int* largest_int(int* int_ptr1, int* int_ptr2) {
+	if (*int_ptr1 > *int_ptr2)
+		return int_ptr1;
+	else
+		return int_ptr2;
+}
+void returning_pointers_case_1() {
+	int a{ 100 };
+	int b{ 200 };
+
+	int* largest_ptr{ nullptr };
+	largest_ptr = largest_int(&a, &b);
+	cout << *largest_ptr << endl;
+}
+
+int* create_array(size_t size, int init_value = 0) {
+	int* new_storage{ nullptr };
+
+	new_storage = new int[size];
+	for (size_t i{ 0 }; i < size; i++)
+		*(new_storage + 1) = init_value;
+	return new_storage;
+}
+void returning_pointers_case_2() {
+
+	int* my_array;
+
+	my_array = create_array(100, 20);
+
+	delete[] my_array;
+}
+
+void reverse_array(int* arr, int size) {
+	int t{ 0 };
+
+	for (size_t i{ 0 }; i < size / 2; i++) {
+		t = *(arr + i);
+		*(arr + i) = *(arr + size - i - 1);
+		*(arr + size - i - 1) = t;
+	}
+}
+void section_12_exercise_33() {
+
+	int arr[] = { 1, 2, 3, 4, 5 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+	for (auto el : arr)
+		cout << el << " ";
+	cout << "size: " << size << "\n---------------------------\n";
+
+	reverse_array(arr, size);
+	for (auto el : arr)
+		cout << el << " ";
+	cout << "size: " << size << "\n---------------------------\n";
+}
+
+std::string reverse_string(const std::string& str) {
+	std::string reversed;
+
+	for (size_t i{ 0 }; i < str.length(); i++){
+		reversed += str.at(str.length() - i - 1);
+	}
+
+	return reversed;
+}
+void section_12_exercise_34() {
+	std::string input = "Hello, World!";
+	cout << "String before: " << input << endl;
+	std::string reversed = reverse_string(input);
+	cout << "String after: " << reversed << endl;
+}
+ 
