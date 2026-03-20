@@ -178,3 +178,37 @@ void relationship_between_arrays_pointers_case_4() {
 	cout << *(scores + 1) << endl;
 	cout << *(scores + 2) << endl;
 }
+void pointer_arithmetic_case_1() {
+
+	std::string s1{ "Frank" };
+	std::string s2{ "Frank" };
+
+	std::string* p1{ &s1 };
+	std::string* p2{ &s2 };
+	std::string* p3{ &s1 };
+
+	cout << "p1 -> s1: " << p1<<endl;
+	cout << "p2 -> s2: " << p2<<endl;
+	cout << "p3 -> s1: " << p3<<endl;
+
+	cout << (*p1 == *p2) << endl;
+	cout << (*p1 == *p3) << endl;
+}
+void pointer_arithmetic_case_2() {
+
+	int scores[]{ 100,95,89,68,-1 };
+	int* score_ptr{ scores };
+
+	while (*score_ptr != -1) {
+		cout << *score_ptr << " ";
+		score_ptr++;
+	}
+
+	cout << "\n------------------------------\n";
+
+	score_ptr = scores; 
+	while (*score_ptr != -1)
+		cout << *score_ptr++ << " ";
+
+}
+

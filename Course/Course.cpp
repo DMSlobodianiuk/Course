@@ -57,7 +57,9 @@ int main()
 	//relationship_between_arrays_pointers_case_1();
 	//relationship_between_arrays_pointers_case_2();
 	//relationship_between_arrays_pointers_case_3();
-	relationship_between_arrays_pointers_case_4();
+	//relationship_between_arrays_pointers_case_4();
+	//pointer_arithmetic_case_1();
+	//pointer_arithmetic_case_2();
 
 	//system("pause");
 } 
