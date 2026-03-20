@@ -60,6 +60,7 @@ int main()
 	//relationship_between_arrays_pointers_case_4();
 	//pointer_arithmetic_case_1();
 	//pointer_arithmetic_case_2();
+	//pointer_arithmetic_case_3();
 
 	//system("pause");
 } 

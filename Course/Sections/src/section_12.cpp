@@ -211,4 +211,20 @@ void pointer_arithmetic_case_2() {
 		cout << *score_ptr++ << " ";
 
 }
+void swapPointers(int* ptr1, int* ptr2) {
+	int ptrt = *ptr1;
+	*ptr1 = *ptr2;
+	*ptr2 = ptrt;
+}
+void pointer_arithmetic_case_3() {
+	int a{ 5 };
+	int b{ 10 };
 
+	int* ptrA = &a;
+	int* ptrB = &b;
+
+	cout << "Before swap\n" << "a: " << a << " b: " << b << endl;
+	swapPointers(ptrA,ptrB);
+	cout << "After swap\n" << "a: " << a<<" b: " << b << endl;
+
+}
