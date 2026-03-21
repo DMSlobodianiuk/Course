@@ -68,5 +68,13 @@ int main()
 	//section_12_exercise_34();
 	//section_12_challenge();
 
+	//section 13
+	//declare_classes_objects_case_1();
+	//acceccing_class_members_case_1();
+	//public_private_case_1();
+	//implementing_members_method_case_1();
+	//constructors_destructors_case_1();
+	constrictors_parameters_default_values_case_1();
+
 	//system("pause");
 } 
