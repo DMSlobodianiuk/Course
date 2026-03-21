@@ -20,3 +20,4 @@ void returning_pointers_case_1();
 void returning_pointers_case_2();
 void section_12_exercise_33();
 void section_12_exercise_34();
+void section_12_challenge();
