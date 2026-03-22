@@ -39,6 +39,7 @@
 //delegating
 Account::Account(string name_val, double balance_val)
 	:name{ name_val }, balance{ balance_val } {
+	cout << name << "'s account was created" << endl;
 }
 
 Account::Account(string name_val)
@@ -59,6 +60,11 @@ Account::Account()
 //	:name{ name_val }, balance{ balance_val } {
 //}
 //--------------------------------------------------------------
+
+Account::Account(const Account& source)
+	:name{ source.name },
+	balance{ source.balance } {
+}
 
 void Account::set_balance(double bal) {
 	balance = bal;
@@ -90,4 +96,4 @@ bool Account::withdraw(double ammount) {
 	}
 }
 
-Account::~Account() {}
+Account::~Account() { cout << name << "'s account was destroyed" << endl; }

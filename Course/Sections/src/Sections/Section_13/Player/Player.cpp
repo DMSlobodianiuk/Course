@@ -44,6 +44,8 @@
 
 Player::Player(string name_val, int health_val, int xp_val)
 	:name{ name_val }, health{ health_val }, xp{ xp_val } {
+	cout << "Player " << name << " was created" << endl;
+	++num_players;
 }
 //--------------------------------------------------------------
 //--------------------------------------------------------------
@@ -53,10 +55,42 @@ Player::Player(string name_val, int health_val, int xp_val)
 //}
 //--------------------------------------------------------------
 
+int Player::num_players = 0;
+
+int Player::get_num_players(){ return num_players; }
+
+//Copy Constructor
+Player::Player(const Player& source)
+	/*:name{ source.name },
+	health{ source.health },
+	xp{ source.xp } {*/
+	:Player{source.name,source.health,source.xp}{
+	cout << "Copy constructor - made copy of: " << source.name << endl;
+}
+
 void Player::print_player() {
 	cout << "Player's name: " << name << ", health: " << health << ", xp: " << xp << endl;
 }
 
 bool Player::is_dead() { return true; }
 
-Player::~Player() {}
+
+//string Player::get_name() { return name; }
+
+//const
+string Player::get_name() const { return name; }
+
+void Player::set_name(string name) { this->name = name; }
+
+int Player::get_health() { return health; }
+
+int Player::get_xp() { return xp; }
+
+Player::~Player() { 
+	cout << "Player " << name << " was destroyed" << endl;
+	num_players--;
+}
+
+void show_friend_name(Player &p) {
+	cout << "I'm a friend of player "<<p.name << endl;
+}

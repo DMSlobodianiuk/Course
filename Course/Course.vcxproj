@@ -126,8 +126,11 @@
     <ClCompile Include="Course.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_12\section_12.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\Account\Account.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Deep\Deep.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Move\Move.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\Player\Player.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\section_13.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Shallow\Shallow.cpp" />
     <ClCompile Include="Sections\src\section_10.cpp" />
     <ClCompile Include="Sections\src\section_11.cpp" />
     <ClCompile Include="Sections\src\section_7.cpp" />
@@ -146,7 +149,10 @@
     <ClInclude Include="Sections\include\section_9.h" />
     <ClInclude Include="Sections\sections.h" />
     <ClInclude Include="Sections\src\Sections\Section_13\Account\Account.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Deep\Deep.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Move\Move.h" />
     <ClInclude Include="Sections\src\Sections\Section_13\Player\Player.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Shallow\Shallow.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />

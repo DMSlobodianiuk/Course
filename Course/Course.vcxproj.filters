@@ -46,6 +46,15 @@
     <Filter Include="Sections\include\Sections\Section_13\Player">
       <UniqueIdentifier>{faeb3061-1a88-4c59-9af5-205aee059bef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Shallow">
+      <UniqueIdentifier>{7cbf810e-137d-49e9-aace-0fe9494e284a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Deep">
+      <UniqueIdentifier>{3457f7cf-53e9-4525-a8ef-41faedee3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Move">
+      <UniqueIdentifier>{7e2a2659-e855-4b17-a36c-ca52d61193c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -81,6 +90,15 @@
     <ClCompile Include="Sections\src\Sections\Section_13\Player\Player.cpp">
       <Filter>Sections\include\Sections\Section_13\Player</Filter>
     </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Shallow\Shallow.cpp">
+      <Filter>Sections\include\Sections\Section_13\Shallow</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Deep\Deep.cpp">
+      <Filter>Sections\include\Sections\Section_13\Deep</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Move\Move.cpp">
+      <Filter>Sections\include\Sections\Section_13\Move</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sections\include\section_7.h">
@@ -115,6 +133,15 @@
     </ClInclude>
     <ClInclude Include="Sections\src\Sections\Section_13\Player\Player.h">
       <Filter>Sections\include\Sections\Section_13\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Shallow\Shallow.h">
+      <Filter>Sections\include\Sections\Section_13\Shallow</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Deep\Deep.h">
+      <Filter>Sections\include\Sections\Section_13\Deep</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Move\Move.h">
+      <Filter>Sections\include\Sections\Section_13\Move</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

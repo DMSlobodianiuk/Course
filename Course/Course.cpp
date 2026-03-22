@@ -1,5 +1,6 @@
 #include <iostream>
 #include ".\Sections\sections.h"
+#include ".\Sections\src\Sections\Section_13\Player\Player.h"
 
 int main()
 {
@@ -74,7 +75,15 @@ int main()
 	//public_private_case_1();
 	//implementing_members_method_case_1();
 	//constructors_destructors_case_1();
-	constrictors_parameters_default_values_case_1();
+	//constrictors_parameters_default_values_case_1();
+	//copy_constructor_cas1_1();
+	//shallow_copying_case_1();
+	//deep_copying_case_1();
+	//move_constructors_case_1();
+	//using_const_with_classes_case_1();
+	/*static_class_members_case_1();
+	cout << "There are " << Player::get_num_players() <<" players" << endl;*/
+	//friend_of_class_case_1();
 
 	//system("pause");
 } 

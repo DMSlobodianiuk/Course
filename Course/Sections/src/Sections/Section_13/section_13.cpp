@@ -3,6 +3,9 @@
 #include <vector>
 #include "Account/Account.h"
 #include "Player/Player.h"
+#include "Shallow/Shallow.h"
+#include "Deep/Deep.h"
+#include "Move/Move.h"
 
 using std::cout;
 using std::cin;
@@ -163,4 +166,96 @@ void constrictors_parameters_default_values_case_1() {
 	frank.print_player();
 	hero.print_player();
 	villian.print_player();
+}
+
+void copy_constructor_cas1_1() {
+	Player empty;
+	Player frank{"Frank"};
+	Player hero{"Hero",100};
+	Player villian{"Villian",100,55};
+
+	//empty.print_player();
+	//frank.print_player();
+	//hero.print_player();
+	//villian.print_player();
+	
+	Player copy_player = hero; 
+	copy_player.print_player();
+}
+
+void display_shallow(Shallow s) {
+	cout << s.get_data_value() << endl;
+}
+
+void shallow_copying_case_1() {
+
+	Shallow obj1{ 100 };
+	display_shallow(obj1);
+
+	Shallow obj2{ obj1 };
+	obj2.set_data_value(1000);
+
+}
+
+void display_deep(Deep s) {
+	cout << s.get_data_value() << endl;
+}
+
+void deep_copying_case_1() {
+	Deep obj1{ 100 };
+	display_deep(obj1);
+
+	Deep obj2{ obj1 };
+	obj2.set_data_value(1000);
+
+}
+
+void move_constructors_case_1() {
+	vector<Move> vec;
+
+	vec.push_back(Move{ 10 });
+
+	vec.push_back(Move{ 20 });
+	vec.push_back(Move{ 30 });
+	vec.push_back(Move{ 40 });
+	vec.push_back(Move{ 50 });
+	vec.push_back(Move{ 60 });
+	vec.push_back(Move{ 70 });
+	vec.push_back(Move{ 80 });
+
+} 
+
+void using_const_with_classes_case_1() {
+	const Player villian{ "Villian",100,55 };
+
+	Player hero{ "Hero",100,15 };
+
+	cout << villian.get_name() << endl;
+	cout << hero.get_name() << endl;
+
+}
+
+void static_class_members_case_1() {
+
+	cout << "There are " << Player::get_num_players() <<" players" << endl;
+
+	Player empty;
+	Player frank{ "Frank" };
+	Player hero{ "Hero",100 };
+	Player villian{ "Villian",100,55 };
+
+	{
+		Player hero{ "Hero",100 };
+		Player villian{ "Villian",100,55 };
+		cout << "There are " << Player::get_num_players() << " players" << endl;
+	}
+
+	cout << "There are " << Player::get_num_players() <<" players" << endl;
+
+}
+
+void friend_of_class_case_1() {
+	Player *p1 = new Player{ "Frank",100,10 };
+
+	show_friend_name(*p1);
 }

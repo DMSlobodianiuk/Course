@@ -13,15 +13,21 @@ private:
 	string name;
 	double balance;
 public:
+	//Contructors
 	Account();
 	Account(string name, double balance);
 	Account(string name);
 	Account(double balance);
 
+	//Copy constructor
+	Account(const Account& source);
+
 	void set_balance(double bal);
 	double get_balance();
 
+	//Setter
 	void set_name(string n);
+	//Getter
 	string get_name();
 	 
 	bool deposit(double amount);
