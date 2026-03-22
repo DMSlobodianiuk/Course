@@ -34,5 +34,4 @@ void section_6_challenge()
 	double total_sum(sum + sum_tax);
 	std::cout << "Total estimate: $" << total_sum << std::endl;
 	std::cout << "This estimate is valid for " << estimate << " days\n";
-
 }

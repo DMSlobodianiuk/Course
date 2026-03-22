@@ -124,23 +124,41 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_12\section_12.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Account\Account.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\Movies\Movies.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\Movie\Movie.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\section_13_challenge.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Deep\Deep.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Move\Move.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Player\Player.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\section_13.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Shallow\Shallow.cpp" />
     <ClCompile Include="Sections\src\section_10.cpp" />
     <ClCompile Include="Sections\src\section_11.cpp" />
-    <ClCompile Include="Sections\src\section_12.cpp" />
     <ClCompile Include="Sections\src\section_7.cpp" />
     <ClCompile Include="Sections\src\section_6.cpp" />
     <ClCompile Include="Sections\src\section_8.cpp" />
     <ClCompile Include="Sections\src\section_9.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Sections\include\Sections\Section_12\section_12.h" />
+    <ClInclude Include="Sections\include\Sections\Section_13\section_13.h" />
     <ClInclude Include="Sections\include\section_10.h" />
     <ClInclude Include="Sections\include\section_11.h" />
-    <ClInclude Include="Sections\include\section_12.h" />
     <ClInclude Include="Sections\include\section_6.h" />
     <ClInclude Include="Sections\include\section_7.h" />
     <ClInclude Include="Sections\include\section_8.h" />
     <ClInclude Include="Sections\include\section_9.h" />
     <ClInclude Include="Sections\sections.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Account\Account.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\Movies\Movies.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\Movie\Movie.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\section_13_challenge.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Deep\Deep.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Move\Move.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Player\Player.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Shallow\Shallow.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />

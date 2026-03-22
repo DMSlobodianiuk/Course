@@ -198,9 +198,4 @@ void recursive_case_2() {
 	cout << "The " << n << "th Fibonacci number is " << fibo(n) << endl;
 }
  
-void section_11_challenge() {
-
-
-
-
-}
+void section_11_challenge() {}

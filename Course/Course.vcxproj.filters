@@ -22,6 +22,48 @@
     <Filter Include="Sections\include">
       <UniqueIdentifier>{8f74a282-6feb-4410-8eb0-10cb55e2c605}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections">
+      <UniqueIdentifier>{e4bd89ad-b704-4b44-9db7-9902a4ce9ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_12">
+      <UniqueIdentifier>{0eaed14f-d478-47be-aab7-c8657296e853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13">
+      <UniqueIdentifier>{52f9182c-0673-49f2-a7cf-1fa5a21781fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections">
+      <UniqueIdentifier>{fc1c5562-c435-4706-9296-eb473278522e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_12">
+      <UniqueIdentifier>{323d5f1b-41e5-48e7-bf67-c5aec2b5e251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_13">
+      <UniqueIdentifier>{bf7561b0-6856-4c63-ae6e-09b3bdf42ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Account">
+      <UniqueIdentifier>{ed643026-f8fd-458a-af28-39da558e7f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Player">
+      <UniqueIdentifier>{faeb3061-1a88-4c59-9af5-205aee059bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Shallow">
+      <UniqueIdentifier>{7cbf810e-137d-49e9-aace-0fe9494e284a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Deep">
+      <UniqueIdentifier>{3457f7cf-53e9-4525-a8ef-41faedee3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Move">
+      <UniqueIdentifier>{7e2a2659-e855-4b17-a36c-ca52d61193c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Challenge">
+      <UniqueIdentifier>{17ede9b7-4a57-4cda-b059-800318c119ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Challenge\Movies">
+      <UniqueIdentifier>{20d51a53-de16-4be6-b73a-3ef08e5a31c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_13\Challenge\Movie">
+      <UniqueIdentifier>{06a36630-4be0-43e5-87e7-f2e48c5266bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -45,8 +87,35 @@
     <ClCompile Include="Sections\src\section_10.cpp">
       <Filter>Sections\src</Filter>
     </ClCompile>
-    <ClCompile Include="Sections\src\section_12.cpp">
-      <Filter>Sections\src</Filter>
+    <ClCompile Include="Sections\src\Sections\Section_12\section_12.cpp">
+      <Filter>Sections\src\Sections\Section_12</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\section_13.cpp">
+      <Filter>Sections\src\Sections\Section_13</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Account\Account.cpp">
+      <Filter>Sections\include\Sections\Section_13\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Player\Player.cpp">
+      <Filter>Sections\include\Sections\Section_13\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Shallow\Shallow.cpp">
+      <Filter>Sections\include\Sections\Section_13\Shallow</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Deep\Deep.cpp">
+      <Filter>Sections\include\Sections\Section_13\Deep</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Move\Move.cpp">
+      <Filter>Sections\include\Sections\Section_13\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\Movie\Movie.cpp">
+      <Filter>Sections\include\Sections\Section_13\Challenge\Movie</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\Movies\Movies.cpp">
+      <Filter>Sections\include\Sections\Section_13\Challenge\Movies</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\section_13_challenge.cpp">
+      <Filter>Sections\include\Sections\Section_13\Challenge</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -71,8 +140,35 @@
     <ClInclude Include="Sections\include\section_10.h">
       <Filter>Sections\include</Filter>
     </ClInclude>
-    <ClInclude Include="Sections\include\section_12.h">
-      <Filter>Sections\include</Filter>
+    <ClInclude Include="Sections\include\Sections\Section_13\section_13.h">
+      <Filter>Sections\include\Sections\Section_13</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_12\section_12.h">
+      <Filter>Sections\include\Sections\Section_12</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Account\Account.h">
+      <Filter>Sections\include\Sections\Section_13\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Player\Player.h">
+      <Filter>Sections\include\Sections\Section_13\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Shallow\Shallow.h">
+      <Filter>Sections\include\Sections\Section_13\Shallow</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Deep\Deep.h">
+      <Filter>Sections\include\Sections\Section_13\Deep</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Move\Move.h">
+      <Filter>Sections\include\Sections\Section_13\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\Movie\Movie.h">
+      <Filter>Sections\include\Sections\Section_13\Challenge\Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\Movies\Movies.h">
+      <Filter>Sections\include\Sections\Section_13\Challenge\Movies</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\section_13_challenge.h">
+      <Filter>Sections\include\Sections\Section_13\Challenge</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

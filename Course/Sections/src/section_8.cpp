@@ -36,5 +36,4 @@ void section_8_challenge()
 
 	cout << "You can provide change for this change as follows:\ndollars: " << dollars << "\nquarters : " << quarters <<
 		"\ndimes : " << dimes << "\nnickels : " << nickels << "\npennies : " << pennies << endl;
-
 }
