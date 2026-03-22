@@ -6,6 +6,7 @@
 #include "Shallow/Shallow.h"
 #include "Deep/Deep.h"
 #include "Move/Move.h"
+#include "Challenge/section_13_challenge.h"
 
 using std::cout;
 using std::cin;
@@ -258,4 +259,13 @@ void friend_of_class_case_1() {
 	Player *p1 = new Player{ "Frank",100,10 };
 
 	show_friend_name(*p1);
+}
+
+void section_13_challenge() {
+
+	Section_13* s_13 = new Section_13();
+
+	s_13->run();
+
+	delete s_13;
 }

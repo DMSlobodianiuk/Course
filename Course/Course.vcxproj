@@ -126,6 +126,9 @@
     <ClCompile Include="Course.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_12\section_12.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\Account\Account.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\Movies\Movies.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\Movie\Movie.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_13\Challenge\section_13_challenge.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\Deep\Deep.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\Move\Move.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\Player\Player.cpp" />
@@ -149,6 +152,9 @@
     <ClInclude Include="Sections\include\section_9.h" />
     <ClInclude Include="Sections\sections.h" />
     <ClInclude Include="Sections\src\Sections\Section_13\Account\Account.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\Movies\Movies.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\Movie\Movie.h" />
+    <ClInclude Include="Sections\src\Sections\Section_13\Challenge\section_13_challenge.h" />
     <ClInclude Include="Sections\src\Sections\Section_13\Deep\Deep.h" />
     <ClInclude Include="Sections\src\Sections\Section_13\Move\Move.h" />
     <ClInclude Include="Sections\src\Sections\Section_13\Player\Player.h" />

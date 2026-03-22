@@ -13,3 +13,4 @@ void move_constructors_case_1();
 void using_const_with_classes_case_1();
 void static_class_members_case_1();
 void friend_of_class_case_1();
+void section_13_challenge();

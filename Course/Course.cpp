@@ -84,6 +84,7 @@ int main()
 	/*static_class_members_case_1();
 	cout << "There are " << Player::get_num_players() <<" players" << endl;*/
 	//friend_of_class_case_1();
+	//section_13_challenge();
 
 	//system("pause");
 } 
