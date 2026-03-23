@@ -81,10 +81,15 @@ int main()
 	//deep_copying_case_1();
 	//move_constructors_case_1();
 	//using_const_with_classes_case_1();
-	/*static_class_members_case_1();
-	cout << "There are " << Player::get_num_players() <<" players" << endl;*/
+	//static_class_members_case_1();
+	//cout << "There are " << Player::get_num_players() <<" players" << endl;
 	//friend_of_class_case_1();
 	//section_13_challenge();
+
+	//section 14
+	//operator_overloading_case_1();
+	//operator_overloading_case_2();
+	//section_14_challenge();
 
 	//system("pause");
 } 

@@ -64,6 +64,15 @@
     <Filter Include="Sections\include\Sections\Section_13\Challenge\Movie">
       <UniqueIdentifier>{06a36630-4be0-43e5-87e7-f2e48c5266bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\src\Sections\Section_14">
+      <UniqueIdentifier>{8fb22aa3-5f71-49a5-b06b-ebe3265970da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_14">
+      <UniqueIdentifier>{8b13ce52-3769-4b2d-9a3b-26084dc6e43b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_14\MyString">
+      <UniqueIdentifier>{44042180-b43d-4d3d-9d37-6d7d661d932f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -117,6 +126,12 @@
     <ClCompile Include="Sections\src\Sections\Section_13\Challenge\section_13_challenge.cpp">
       <Filter>Sections\include\Sections\Section_13\Challenge</Filter>
     </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_14\section_14.cpp">
+      <Filter>Sections\src\Sections\Section_14</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_14\MyString\MyString.cpp">
+      <Filter>Sections\src\Sections\Section_14\MyString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sections\include\section_7.h">
@@ -169,6 +184,12 @@
     </ClInclude>
     <ClInclude Include="Sections\src\Sections\Section_13\Challenge\section_13_challenge.h">
       <Filter>Sections\include\Sections\Section_13\Challenge</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_14\section_14.h">
+      <Filter>Sections\include\Sections\Section_14</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\src\Sections\Section_14\MyString\MyString.h">
+      <Filter>Sections\src\Sections\Section_14\MyString</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
