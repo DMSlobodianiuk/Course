@@ -136,6 +136,11 @@
     <ClCompile Include="Sections\src\Sections\Section_13\Shallow\Shallow.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_14\MyString\MyString.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_14\section_14.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\Base\Base.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\Derived\Derived.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\Savings_Statement\Savings_Statement.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\section_15.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\Statement\Statement.cpp" />
     <ClCompile Include="Sections\src\section_10.cpp" />
     <ClCompile Include="Sections\src\section_11.cpp" />
     <ClCompile Include="Sections\src\section_7.cpp" />
@@ -147,6 +152,11 @@
     <ClInclude Include="Sections\include\Sections\Section_12\section_12.h" />
     <ClInclude Include="Sections\include\Sections\Section_13\section_13.h" />
     <ClInclude Include="Sections\include\Sections\Section_14\section_14.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\Base\Base.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\Derived\Derived.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\Savings_Statement\Savings_Statement.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\section_15.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\Statement\Statement.h" />
     <ClInclude Include="Sections\include\section_10.h" />
     <ClInclude Include="Sections\include\section_11.h" />
     <ClInclude Include="Sections\include\section_6.h" />

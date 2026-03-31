@@ -73,6 +73,36 @@
     <Filter Include="Sections\src\Sections\Section_14\MyString">
       <UniqueIdentifier>{44042180-b43d-4d3d-9d37-6d7d661d932f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections\Section_15">
+      <UniqueIdentifier>{f2dee8f5-76cc-402c-b844-342c412ed022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15">
+      <UniqueIdentifier>{4000afef-93a6-4426-bdf7-d94f7928052f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Statement">
+      <UniqueIdentifier>{0bc19ae9-f036-405d-8d73-0f6b55e0fca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Savings_Statement">
+      <UniqueIdentifier>{bb17644c-4209-44dd-84a4-4caf148b645f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Statement">
+      <UniqueIdentifier>{1d1bd23d-b30f-4fb4-a81f-123421f66e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Savings_Statement">
+      <UniqueIdentifier>{1ecd104c-bb36-42e1-a400-49d3caa2fd13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Base">
+      <UniqueIdentifier>{8584befc-a227-4224-949e-d5b926c1414a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Derived">
+      <UniqueIdentifier>{89325797-6f24-412f-9f4b-87ed235306eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Base">
+      <UniqueIdentifier>{f37227f6-d015-4038-a7ac-68d2c3acad84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Derived">
+      <UniqueIdentifier>{81d449c5-f2b2-4c47-ae69-622dac05b3ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -132,6 +162,21 @@
     <ClCompile Include="Sections\src\Sections\Section_14\MyString\MyString.cpp">
       <Filter>Sections\src\Sections\Section_14\MyString</Filter>
     </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\section_15.cpp">
+      <Filter>Sections\src\Sections\Section_15</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Statement\Statement.cpp">
+      <Filter>Sections\src\Sections\Section_15\Statement</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Savings_Statement\Savings_Statement.cpp">
+      <Filter>Sections\src\Sections\Section_15\Savings_Statement</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Base\Base.cpp">
+      <Filter>Sections\src\Sections\Section_15\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Derived\Derived.cpp">
+      <Filter>Sections\src\Sections\Section_15\Derived</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sections\include\section_7.h">
@@ -190,6 +235,21 @@
     </ClInclude>
     <ClInclude Include="Sections\src\Sections\Section_14\MyString\MyString.h">
       <Filter>Sections\src\Sections\Section_14\MyString</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\section_15.h">
+      <Filter>Sections\include\Sections\Section_15</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Statement\Statement.h">
+      <Filter>Sections\include\Sections\Section_15\Statement</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Savings_Statement\Savings_Statement.h">
+      <Filter>Sections\include\Sections\Section_15\Savings_Statement</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Base\Base.h">
+      <Filter>Sections\include\Sections\Section_15\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Derived\Derived.h">
+      <Filter>Sections\include\Sections\Section_15\Derived</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
