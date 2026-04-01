@@ -137,6 +137,10 @@
     <ClCompile Include="Sections\src\Sections\Section_14\MyString\MyString.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_14\section_14.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_15\Base\Base.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Acc\Acc.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Checking_Acc\Checking_acc.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Savings_Acc\Savings_Acc.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Trust_Acc\Trust_Acc.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_15\Derived\Derived.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_15\Savings_Statement\Savings_Statement.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_15\section_15.cpp" />
@@ -153,6 +157,10 @@
     <ClInclude Include="Sections\include\Sections\Section_13\section_13.h" />
     <ClInclude Include="Sections\include\Sections\Section_14\section_14.h" />
     <ClInclude Include="Sections\include\Sections\Section_15\Base\Base.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Acc\Acc.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Checking_Acc\Checking_Acc.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Savings_Acc\Savings_Acc.h" />
+    <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Trust_Acc\Trust_Acc.h" />
     <ClInclude Include="Sections\include\Sections\Section_15\Derived\Derived.h" />
     <ClInclude Include="Sections\include\Sections\Section_15\Savings_Statement\Savings_Statement.h" />
     <ClInclude Include="Sections\include\Sections\Section_15\section_15.h" />

@@ -10,14 +10,21 @@ using std::endl;
 using std::string;
 
 class Statement {
-public:
+	friend std::ostream& operator<<(std::ostream& os, const Statement& statement);
+protected:
 	double balance;
 	string name;
-	
+
+public:
+	Statement();
+	Statement(double balance);
+
 	void deposit(double amount);
 	void withdraw(double amount);
 
-	Statement();
+	void redefined_deposit(double amount) { balance += amount; }
+
+
 	~Statement();
 };
 #endif

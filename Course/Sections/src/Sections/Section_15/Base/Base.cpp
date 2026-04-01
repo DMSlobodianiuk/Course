@@ -10,6 +10,19 @@ Base::Base(int x)
 	cout << "Base(int) overloaded constructor" << endl;
 }
 
+Base::Base(const Base& other)
+	:value{ other.value } {
+	cout << "Base copy contructor" << endl;
+}
+
+Base& Base::operator=(const Base& rhs){
+	cout << "Base operator=" << endl;
+	if (this == &rhs)
+		return *this;
+	value = rhs.value;
+	return *this;
+}
+
 Base::~Base()
 {
 	cout << "Base destructor" << endl;

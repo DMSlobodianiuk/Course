@@ -13,6 +13,10 @@ protected:
 public:
 	Base();
 	Base(int x);
+	Base(const Base& other);
+
+	Base& operator=(const Base& rhs);
+
 	~Base();
 
 	void set_c(int new_c);

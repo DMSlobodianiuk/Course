@@ -94,7 +94,10 @@ int main()
 	//section 15
 	//deriving_case_1();
 	//deriving_case_2();
-	deriving_case_3();
+	//deriving_case_3();
+	//deriving_case_4();
+	//deriving_case_5();
+	section_15_challenge();
 
 	//system("pause");
 } 

@@ -17,6 +17,20 @@ Derived::Derived(int x)
 	cout << "int Derived constructor" << endl;
 }
 
+Derived::Derived(const Derived& other)
+	: Base(other), doubled_value(other.doubled_value) {
+	cout << "Derived copy construtctor" << endl;
+}
+
+Derived& Derived::operator=(const Derived& rhs) {
+	cout << "Derived operator=" << endl;
+	if (this == &rhs)
+		return *this;
+	Base::operator=(rhs);
+	doubled_value = rhs.doubled_value;
+	return *this;
+}
+
 ////Without passing args to base class constructor
 //Derived::Derived(int x) 
 //	:doubled_value(x*2){
@@ -28,8 +42,6 @@ Derived::Derived(int x)
 //	:Base(x * 2) {
 //	cout << "Derived (int) with passing args to base class constructor overloaded constructor" << endl;
 //}
-
-
 
 Derived::~Derived()
 {

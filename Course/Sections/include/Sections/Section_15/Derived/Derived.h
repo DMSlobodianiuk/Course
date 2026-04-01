@@ -9,6 +9,10 @@ protected:
 public:
 	Derived();
 	Derived(int x);
+	Derived(const Derived& other);
+
+	Derived& operator=(const Derived& rhs);
+
 	~Derived();
 
 	void access_base_memeber();
