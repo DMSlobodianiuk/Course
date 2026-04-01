@@ -73,6 +73,66 @@
     <Filter Include="Sections\src\Sections\Section_14\MyString">
       <UniqueIdentifier>{44042180-b43d-4d3d-9d37-6d7d661d932f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections\Section_15">
+      <UniqueIdentifier>{f2dee8f5-76cc-402c-b844-342c412ed022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15">
+      <UniqueIdentifier>{4000afef-93a6-4426-bdf7-d94f7928052f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Statement">
+      <UniqueIdentifier>{0bc19ae9-f036-405d-8d73-0f6b55e0fca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Savings_Statement">
+      <UniqueIdentifier>{bb17644c-4209-44dd-84a4-4caf148b645f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Statement">
+      <UniqueIdentifier>{1d1bd23d-b30f-4fb4-a81f-123421f66e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Savings_Statement">
+      <UniqueIdentifier>{1ecd104c-bb36-42e1-a400-49d3caa2fd13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Base">
+      <UniqueIdentifier>{8584befc-a227-4224-949e-d5b926c1414a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Derived">
+      <UniqueIdentifier>{89325797-6f24-412f-9f4b-87ed235306eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Base">
+      <UniqueIdentifier>{f37227f6-d015-4038-a7ac-68d2c3acad84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Derived">
+      <UniqueIdentifier>{81d449c5-f2b2-4c47-ae69-622dac05b3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Challenge">
+      <UniqueIdentifier>{d7a5da78-80e4-423f-9b92-74ca634fd9e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Challenge\Acc">
+      <UniqueIdentifier>{146b7dd6-3906-4a82-a3d5-41f64b34ae57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Challenge\Savings_Acc">
+      <UniqueIdentifier>{7e76362d-ddaf-48db-bb9f-306f801e85d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Challenge\Checking_Acc">
+      <UniqueIdentifier>{07143ffc-c12f-47ec-8a01-9ed5f9343df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Challenge">
+      <UniqueIdentifier>{75bd3352-f7db-4174-9623-5b4c69b13e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Challenge\Acc">
+      <UniqueIdentifier>{673cd0b1-124e-4588-a931-2c39429ecc50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Challenge\Checkint_Acc">
+      <UniqueIdentifier>{6df77b2f-3b9f-4dcc-8b6e-4bd57ef2ba21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Challenge\Trust_Acc">
+      <UniqueIdentifier>{493025f1-c0d5-4b2f-b675-2f4ac0a62d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_15\Challenge\Savings_Acc">
+      <UniqueIdentifier>{b50e0b9e-66cb-453b-958b-a276e1f06487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_15\Challenge\Trust_Acc">
+      <UniqueIdentifier>{71851feb-bef9-4067-b2e2-266dbdc3fb87}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -132,6 +192,33 @@
     <ClCompile Include="Sections\src\Sections\Section_14\MyString\MyString.cpp">
       <Filter>Sections\src\Sections\Section_14\MyString</Filter>
     </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\section_15.cpp">
+      <Filter>Sections\src\Sections\Section_15</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Statement\Statement.cpp">
+      <Filter>Sections\src\Sections\Section_15\Statement</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Savings_Statement\Savings_Statement.cpp">
+      <Filter>Sections\src\Sections\Section_15\Savings_Statement</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Base\Base.cpp">
+      <Filter>Sections\src\Sections\Section_15\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Derived\Derived.cpp">
+      <Filter>Sections\src\Sections\Section_15\Derived</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Acc\Acc.cpp">
+      <Filter>Sections\src\Sections\Section_15\Challenge\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Checking_Acc\Checking_acc.cpp">
+      <Filter>Sections\src\Sections\Section_15\Challenge\Checkint_Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Savings_Acc\Savings_Acc.cpp">
+      <Filter>Sections\src\Sections\Section_15\Challenge\Savings_Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Trust_Acc\Trust_Acc.cpp">
+      <Filter>Sections\src\Sections\Section_15\Challenge\Trust_Acc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sections\include\section_7.h">
@@ -190,6 +277,33 @@
     </ClInclude>
     <ClInclude Include="Sections\src\Sections\Section_14\MyString\MyString.h">
       <Filter>Sections\src\Sections\Section_14\MyString</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\section_15.h">
+      <Filter>Sections\include\Sections\Section_15</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Statement\Statement.h">
+      <Filter>Sections\include\Sections\Section_15\Statement</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Savings_Statement\Savings_Statement.h">
+      <Filter>Sections\include\Sections\Section_15\Savings_Statement</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Base\Base.h">
+      <Filter>Sections\include\Sections\Section_15\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Derived\Derived.h">
+      <Filter>Sections\include\Sections\Section_15\Derived</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Acc\Acc.h">
+      <Filter>Sections\include\Sections\Section_15\Challenge\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Checking_Acc\Checking_Acc.h">
+      <Filter>Sections\include\Sections\Section_15\Challenge\Checking_Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Trust_Acc\Trust_Acc.h">
+      <Filter>Sections\include\Sections\Section_15\Challenge\Trust_Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Savings_Acc\Savings_Acc.h">
+      <Filter>Sections\include\Sections\Section_15\Challenge\Savings_Acc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

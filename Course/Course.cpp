@@ -87,9 +87,17 @@ int main()
 	//section_13_challenge();
 
 	//section 14
-	//operator_overloading_case_1();
+	//operator_overloading_case_1(); 
 	//operator_overloading_case_2();
 	//section_14_challenge();
+
+	//section 15
+	//deriving_case_1();
+	//deriving_case_2();
+	//deriving_case_3();
+	//deriving_case_4();
+	//deriving_case_5();
+	section_15_challenge();
 
 	//system("pause");
 } 

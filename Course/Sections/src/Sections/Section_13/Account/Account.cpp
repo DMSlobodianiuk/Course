@@ -1,7 +1,7 @@
 #include "Account.h"
 
-//--------------------------------------------------------------
-//assignment
+////--------------------------------------------------------------
+////assignment
 //Account::Account() {}
 //
 //Account::Account(string name, double balance) {
@@ -16,9 +16,9 @@
 //Account::Account(double balance) {
 //	this->balance = balance;
 //}
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-//initialization
+////--------------------------------------------------------------
+////--------------------------------------------------------------
+////initialization
 //Account::Account()
 //	:name{ "None" }, balance{0.0} {
 //}
@@ -34,9 +34,9 @@
 //Account::Account(double balance_val)
 //	:balance{ balance_val } {
 //}
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-//delegating
+////--------------------------------------------------------------
+////--------------------------------------------------------------
+////delegating
 Account::Account(string name_val, double balance_val)
 	:name{ name_val }, balance{ balance_val } {
 	cout << name << "'s account was created" << endl;
@@ -53,9 +53,9 @@ Account::Account(double balance_val)
 Account::Account()
 	:Account{ "",0.0 } {
 }
-//--------------------------------------------------------------
-//--------------------------------------------------------------
-//default constructor parameters
+////--------------------------------------------------------------
+////--------------------------------------------------------------
+////default constructor parameters
 //Account::Account(string name_val = "None", double balance_val = 0.0)
 //	:name{ name_val }, balance{ balance_val } {
 //}
