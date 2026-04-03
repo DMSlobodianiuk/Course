@@ -11,8 +11,6 @@
 #include "..\..\..\include\Sections\Section_15\Challenge\Checking_Acc\Checking_Acc.h"
 #include "..\..\..\include\Sections\Section_15\Challenge\Trust_Acc\Trust_Acc.h"
 
-
-
 using std::cin;
 using std::cout;
 using std::endl;

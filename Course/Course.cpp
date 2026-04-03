@@ -97,7 +97,16 @@ int main()
 	//deriving_case_3();
 	//deriving_case_4();
 	//deriving_case_5();
-	section_15_challenge();
+	//section_15_challenge();
+
+	//section 16
+	//polymorphism_case_1();
+	//polymorphism_case_2();
+	//polymorphism_case_3();
+	//polymorphism_case_4();
+	//polymorphism_case_5();
+	//polymorphism_case_6();
+	section_16_challenge();
 
 	//system("pause");
 } 

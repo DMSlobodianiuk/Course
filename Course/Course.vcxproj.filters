@@ -133,28 +133,85 @@
     <Filter Include="Sections\include\Sections\Section_15\Challenge\Trust_Acc">
       <UniqueIdentifier>{71851feb-bef9-4067-b2e2-266dbdc3fb87}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections\Section_10">
+      <UniqueIdentifier>{4908a48f-1510-486b-ae83-315ff2b741b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_11">
+      <UniqueIdentifier>{0f656f23-1ef1-44e8-a361-dde016237b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_11">
+      <UniqueIdentifier>{085ccea2-9761-4ee5-858e-e55f4cd026fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_6">
+      <UniqueIdentifier>{65581fd3-cfa9-41fd-936c-8b15d74bb898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_7">
+      <UniqueIdentifier>{efae98d5-347e-4c28-a13b-7a0850ba6858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_8">
+      <UniqueIdentifier>{efb87428-ae47-48dc-8879-2ff8c71af9cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_9">
+      <UniqueIdentifier>{e6505448-de99-41d1-a81c-04b7c80c49d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_10">
+      <UniqueIdentifier>{0910b4cf-ddbe-4031-baf8-c7eac88e5b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_9">
+      <UniqueIdentifier>{b8ba78f8-96e0-43ae-bca5-210d4eeff35c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_8">
+      <UniqueIdentifier>{d047b387-82c7-4285-86f3-e1383d1a0efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_7">
+      <UniqueIdentifier>{0e64669c-3eb7-4576-98dc-21667ca845f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_6">
+      <UniqueIdentifier>{b138297d-38a1-4ada-9b6b-e9481ad9b01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_16">
+      <UniqueIdentifier>{ce5a1b5b-5386-40f8-a59d-f63b0479fc7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_16">
+      <UniqueIdentifier>{d36d6abe-b106-487f-bce6-d5012a6c0f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_16\Challenge">
+      <UniqueIdentifier>{ee7a0123-2b03-43cc-9f9b-973ca80570a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_16\Challenge">
+      <UniqueIdentifier>{b37b06ad-13ea-4751-9e48-79216289e76d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_16\Challenge\Acc_challenge_16">
+      <UniqueIdentifier>{8e72afc9-ef3f-4cea-aa21-cf5e4b8200f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_16\Challenge\Checking_challenge_16">
+      <UniqueIdentifier>{9c8c6512-31b0-4460-ab9f-ad4d3f65e23d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_16\Challenge\Savings__challenge_16">
+      <UniqueIdentifier>{04b6e404-cd36-4e8e-abbc-0f36d301f4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_16\Challenge\Trust__challenge_16">
+      <UniqueIdentifier>{07d9c7bb-8311-4d5a-870b-fe8adcb766d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_16\Challenge\Acc_challenge_16">
+      <UniqueIdentifier>{85a226ba-779e-4e76-b4cd-814733c2a39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_16\Challenge\Checking_challenge_16">
+      <UniqueIdentifier>{4da55b42-41bf-4be1-8562-03dbd81ec102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_16\Challenge\Trust_challenge_16">
+      <UniqueIdentifier>{53a806de-5bad-485d-9d3b-b3f9e8d48f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_16\Challenge\Savings_challenge_16">
+      <UniqueIdentifier>{0751dd08-8403-4132-aef5-67fa02eeb298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\include\Sections\Section_16\Challenge\Printable_challenge_16">
+      <UniqueIdentifier>{4c55bf6d-267e-498e-8a68-5c15f4b35951}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sections\src\section_6.cpp">
-      <Filter>Sections\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Sections\src\section_7.cpp">
-      <Filter>Sections\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Sections\src\section_8.cpp">
-      <Filter>Sections\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Sections\src\section_9.cpp">
-      <Filter>Sections\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Sections\src\section_11.cpp">
-      <Filter>Sections\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Sections\src\section_10.cpp">
-      <Filter>Sections\src</Filter>
     </ClCompile>
     <ClCompile Include="Sections\src\Sections\Section_12\section_12.cpp">
       <Filter>Sections\src\Sections\Section_12</Filter>
@@ -219,28 +276,43 @@
     <ClCompile Include="Sections\src\Sections\Section_15\Challenge\Trust_Acc\Trust_Acc.cpp">
       <Filter>Sections\src\Sections\Section_15\Challenge\Trust_Acc</Filter>
     </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_6\section_6.cpp">
+      <Filter>Sections\src\Sections\Section_6</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_7\section_7.cpp">
+      <Filter>Sections\src\Sections\Section_7</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_8\section_8.cpp">
+      <Filter>Sections\src\Sections\Section_8</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_9\section_9.cpp">
+      <Filter>Sections\src\Sections\Section_9</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_10\section_10.cpp">
+      <Filter>Sections\src\Sections\Section_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_11\section_11.cpp">
+      <Filter>Sections\src\Sections\Section_11</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_16\section_16.cpp">
+      <Filter>Sections\src\Sections\Section_16</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Acc_challenge_16\Acc_challenge_16.cpp">
+      <Filter>Sections\src\Sections\Section_16\Challenge\Acc_challenge_16</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Checking_challenge_16\Checking_challenge_16.cpp">
+      <Filter>Sections\src\Sections\Section_16\Challenge\Checking_challenge_16</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Savings_challenge_16\Savings_challenge_16.cpp">
+      <Filter>Sections\src\Sections\Section_16\Challenge\Savings_challenge_16</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Trust_challenge_16\Trust_challenge_16.cpp">
+      <Filter>Sections\src\Sections\Section_16\Challenge\Trust_challenge_16</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sections\include\section_7.h">
-      <Filter>Sections\include</Filter>
-    </ClInclude>
     <ClInclude Include="Sections\sections.h">
       <Filter>Sections</Filter>
-    </ClInclude>
-    <ClInclude Include="Sections\include\section_6.h">
-      <Filter>Sections\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Sections\include\section_8.h">
-      <Filter>Sections\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Sections\include\section_9.h">
-      <Filter>Sections\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Sections\include\section_11.h">
-      <Filter>Sections\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Sections\include\section_10.h">
-      <Filter>Sections\include</Filter>
     </ClInclude>
     <ClInclude Include="Sections\include\Sections\Section_13\section_13.h">
       <Filter>Sections\include\Sections\Section_13</Filter>
@@ -304,6 +376,45 @@
     </ClInclude>
     <ClInclude Include="Sections\include\Sections\Section_15\Challenge\Savings_Acc\Savings_Acc.h">
       <Filter>Sections\include\Sections\Section_15\Challenge\Savings_Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_6\section_6.h">
+      <Filter>Sections\include\Sections\Section_6</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_7\section_7.h">
+      <Filter>Sections\include\Sections\Section_7</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_8\section_8.h">
+      <Filter>Sections\include\Sections\Section_8</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_9\section_9.h">
+      <Filter>Sections\include\Sections\Section_9</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_10\section_10.h">
+      <Filter>Sections\include\Sections\Section_10</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_11\section_11.h">
+      <Filter>Sections\include\Sections\Section_11</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_16\section_16.h">
+      <Filter>Sections\include\Sections\Section_16</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\section_16_challenge.h">
+      <Filter>Sections\include\Sections\Section_16\Challenge</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Acc_challenge_16\Acc_challenge_16.h">
+      <Filter>Sections\include\Sections\Section_16\Challenge\Acc_challenge_16</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Checking_challenge_16\Checking_challenge_16.h">
+      <Filter>Sections\include\Sections\Section_16\Challenge\Checking_challenge_16</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Trust_challenge_16\Trust_challenge_16.h">
+      <Filter>Sections\include\Sections\Section_16\Challenge\Trust__challenge_16</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Savings_challenge_16\Savings_challenge_16.h">
+      <Filter>Sections\include\Sections\Section_16\Challenge\Savings__challenge_16</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Printable_challenge_16\Printable_challenge_16.h">
+      <Filter>Sections\include\Sections\Section_16\Challenge\Printable_challenge_16</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

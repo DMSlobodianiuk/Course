@@ -124,6 +124,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_10\section_10.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_11\section_11.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_12\section_12.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\Account\Account.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_13\Challenge\Movies\Movies.cpp" />
@@ -145,14 +147,19 @@
     <ClCompile Include="Sections\src\Sections\Section_15\Savings_Statement\Savings_Statement.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_15\section_15.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_15\Statement\Statement.cpp" />
-    <ClCompile Include="Sections\src\section_10.cpp" />
-    <ClCompile Include="Sections\src\section_11.cpp" />
-    <ClCompile Include="Sections\src\section_7.cpp" />
-    <ClCompile Include="Sections\src\section_6.cpp" />
-    <ClCompile Include="Sections\src\section_8.cpp" />
-    <ClCompile Include="Sections\src\section_9.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Acc_challenge_16\Acc_challenge_16.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Checking_challenge_16\Checking_challenge_16.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Savings_challenge_16\Savings_challenge_16.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Trust_challenge_16\Trust_challenge_16.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_16\section_16.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_6\section_6.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_7\section_7.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_8\section_8.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_9\section_9.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Sections\include\Sections\Section_10\section_10.h" />
+    <ClInclude Include="Sections\include\Sections\Section_11\section_11.h" />
     <ClInclude Include="Sections\include\Sections\Section_12\section_12.h" />
     <ClInclude Include="Sections\include\Sections\Section_13\section_13.h" />
     <ClInclude Include="Sections\include\Sections\Section_14\section_14.h" />
@@ -165,12 +172,17 @@
     <ClInclude Include="Sections\include\Sections\Section_15\Savings_Statement\Savings_Statement.h" />
     <ClInclude Include="Sections\include\Sections\Section_15\section_15.h" />
     <ClInclude Include="Sections\include\Sections\Section_15\Statement\Statement.h" />
-    <ClInclude Include="Sections\include\section_10.h" />
-    <ClInclude Include="Sections\include\section_11.h" />
-    <ClInclude Include="Sections\include\section_6.h" />
-    <ClInclude Include="Sections\include\section_7.h" />
-    <ClInclude Include="Sections\include\section_8.h" />
-    <ClInclude Include="Sections\include\section_9.h" />
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Acc_challenge_16\Acc_challenge_16.h" />
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Checking_challenge_16\Checking_challenge_16.h" />
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Printable_challenge_16\Printable_challenge_16.h" />
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Savings_challenge_16\Savings_challenge_16.h" />
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\section_16_challenge.h" />
+    <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Trust_challenge_16\Trust_challenge_16.h" />
+    <ClInclude Include="Sections\include\Sections\Section_16\section_16.h" />
+    <ClInclude Include="Sections\include\Sections\Section_6\section_6.h" />
+    <ClInclude Include="Sections\include\Sections\Section_7\section_7.h" />
+    <ClInclude Include="Sections\include\Sections\Section_8\section_8.h" />
+    <ClInclude Include="Sections\include\Sections\Section_9\section_9.h" />
     <ClInclude Include="Sections\sections.h" />
     <ClInclude Include="Sections\src\Sections\Section_13\Account\Account.h" />
     <ClInclude Include="Sections\src\Sections\Section_13\Challenge\Movies\Movies.h" />

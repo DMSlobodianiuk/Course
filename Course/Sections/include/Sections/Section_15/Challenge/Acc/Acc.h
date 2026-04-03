@@ -8,7 +8,7 @@ using std::endl;
 using std::string;
 
 class Acc {
-	friend std::ostream& operator<<(std::ostream &os, const Acc& acc);
+	//friend std::ostream& operator<<(std::ostream &os, const Acc& acc);
 private:
 	static constexpr const char* def_name = "Unnamed Acc";
 	static constexpr double def_balance = 0.0;

@@ -1,9 +1,9 @@
 #include "..\..\..\..\..\include\Sections\Section_15\Challenge\Acc\Acc.h"
 
-std::ostream& operator<<(std::ostream& os, const Acc& acc) {
-	os << "[ Acc's name: " << acc.name << "| Acc's balance: " << acc.balance <<" ]" << endl;
-	return os;
-}
+//std::ostream& operator<<(std::ostream& os, const Acc& acc) {
+//	os << "[ Acc's name: " << acc.name << "| Acc's balance: " << acc.balance <<" ]" << endl;
+//	return os;
+//}
 
 Acc::Acc(double balance)
 	:name{ "acc name" }, balance{ balance } {
