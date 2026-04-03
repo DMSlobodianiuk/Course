@@ -1,0 +1,19 @@
+#pragma once
+#include <iostream>
+#include <memory>
+#include <vector>
+#include <string>
+using std::cin;
+using std::cout;
+using std::endl;
+using std::ostream;
+using std::vector;
+using std::string;
+
+void polymorphism_case_1();
+void polymorphism_case_2();
+void polymorphism_case_3();
+void polymorphism_case_4();
+void polymorphism_case_5();
+void polymorphism_case_6();
+void section_16_challenge();

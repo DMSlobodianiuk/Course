@@ -12,7 +12,7 @@ void section_7_challenge()
 
 	vector1.push_back(10);
 	vector1.push_back(20);
-
+	
 	cout << "vector1: " << vector1.at(0) << " " << vector1.at(1) << " with size: " << vector1.size() << endl;
 	//cout << vector1.at(0) << endl;
 	//cout << vector1.at(1) << endl;
