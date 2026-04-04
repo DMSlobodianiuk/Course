@@ -152,6 +152,7 @@
     <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Savings_challenge_16\Savings_challenge_16.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Trust_challenge_16\Trust_challenge_16.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_16\section_16.cpp" />
+    <ClCompile Include="Sections\src\Sections\Section_17\section_17.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_6\section_6.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_7\section_7.cpp" />
     <ClCompile Include="Sections\src\Sections\Section_8\section_8.cpp" />
@@ -179,6 +180,7 @@
     <ClInclude Include="Sections\include\Sections\Section_16\Challenge\section_16_challenge.h" />
     <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Trust_challenge_16\Trust_challenge_16.h" />
     <ClInclude Include="Sections\include\Sections\Section_16\section_16.h" />
+    <ClInclude Include="Sections\include\Sections\Section_17\section_17.h" />
     <ClInclude Include="Sections\include\Sections\Section_6\section_6.h" />
     <ClInclude Include="Sections\include\Sections\Section_7\section_7.h" />
     <ClInclude Include="Sections\include\Sections\Section_8\section_8.h" />
