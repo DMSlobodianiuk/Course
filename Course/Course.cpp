@@ -106,7 +106,16 @@ int main()
 	//polymorphism_case_4();
 	//polymorphism_case_5();
 	//polymorphism_case_6();
-	section_16_challenge();
+	//section_16_challenge();
+
+	//section 17
+	//smart_pointers_case_1();
+	//smart_pointers_case_2();
+	//smart_pointers_case_4();
+	//shared_pointers_case_1();
+	//weak_pointers_case_1();
+	//custom_deleters_case_1();
+	//section_17_challenge();
 
 	//system("pause");
 } 

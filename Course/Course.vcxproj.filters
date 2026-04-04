@@ -208,6 +208,12 @@
     <Filter Include="Sections\include\Sections\Section_16\Challenge\Printable_challenge_16">
       <UniqueIdentifier>{4c55bf6d-267e-498e-8a68-5c15f4b35951}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections\Section_17">
+      <UniqueIdentifier>{055a9453-317b-4f03-8be3-2a537fe3b512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_17">
+      <UniqueIdentifier>{72fdc55f-e2e5-4241-a5a3-945cfbaf6c0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -308,6 +314,9 @@
     </ClCompile>
     <ClCompile Include="Sections\src\Sections\Section_16\Challenge\Trust_challenge_16\Trust_challenge_16.cpp">
       <Filter>Sections\src\Sections\Section_16\Challenge\Trust_challenge_16</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_17\section_17.cpp">
+      <Filter>Sections\src\Sections\Section_17</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -415,6 +424,9 @@
     </ClInclude>
     <ClInclude Include="Sections\include\Sections\Section_16\Challenge\Printable_challenge_16\Printable_challenge_16.h">
       <Filter>Sections\include\Sections\Section_16\Challenge\Printable_challenge_16</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_17\section_17.h">
+      <Filter>Sections\include\Sections\Section_17</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
