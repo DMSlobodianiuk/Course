@@ -117,5 +117,16 @@ int main()
 	//custom_deleters_case_1();
 	//section_17_challenge();
 
+	//section 18
+	//exception_case_1(0.0);
+	//exception_case_1();
+	//exception_case_2();
+	//exception_case_3();
+	//exception_case_4();
+	//exception_case_5();
+	//exception_case_6();
+	//exception_case_7();
+	//section_18_challenge();
+
 	//system("pause");
 } 

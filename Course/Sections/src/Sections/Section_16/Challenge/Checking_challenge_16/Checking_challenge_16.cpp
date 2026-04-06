@@ -15,8 +15,9 @@ bool Checking_challenge_16::deposit(double amount){
 
 bool Checking_challenge_16::withdraw(double amount) {
 	if (balance - amount < 0) {
-		cout << "You have not enough money to withdraw " << amount << endl;
-		return false;
+		//cout << "You have not enough money to withdraw " << amount << endl;
+		//return false;
+		throw InsufficientFundsException();
 	}
 	else {
 		cout << "\nChecking withdraw" << endl;

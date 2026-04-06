@@ -214,6 +214,12 @@
     <Filter Include="Sections\src\Sections\Section_17">
       <UniqueIdentifier>{72fdc55f-e2e5-4241-a5a3-945cfbaf6c0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections\Section_18">
+      <UniqueIdentifier>{736e739a-726f-4803-8e29-974e5d112f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_18">
+      <UniqueIdentifier>{61a15e30-f177-49f7-b15a-0a49fac07d5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -317,6 +323,9 @@
     </ClCompile>
     <ClCompile Include="Sections\src\Sections\Section_17\section_17.cpp">
       <Filter>Sections\src\Sections\Section_17</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_18\section_18.cpp">
+      <Filter>Sections\src\Sections\Section_18</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -427,6 +436,9 @@
     </ClInclude>
     <ClInclude Include="Sections\include\Sections\Section_17\section_17.h">
       <Filter>Sections\include\Sections\Section_17</Filter>
+    </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_18\section_18.h">
+      <Filter>Sections\include\Sections\Section_18</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
