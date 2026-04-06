@@ -23,3 +23,18 @@ public:
 
 	~Acc_challenge_16();
 };
+
+class IllegalBalanceExceptopn :public std::exception{
+public:
+	IllegalBalanceExceptopn() = default;
+	string Message() const { return "You've triggered IllegalBalanceExceptopn.Message() method"; }
+	virtual const char* what() const noexcept { return "Illegal Balance Exception"; }
+	~IllegalBalanceExceptopn() = default;
+};
+
+class InsufficientFundsException : public std::exception {
+public:
+	InsufficientFundsException() = default;
+	virtual const char* what() const noexcept { return "Insufficient Funds Exception"; }
+	~InsufficientFundsException() = default;
+};
