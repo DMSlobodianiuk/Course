@@ -128,5 +128,14 @@ int main()
 	//exception_case_7();
 	//section_18_challenge();
 
+	//section 19
+	//streams_case_1();
+	//streams_case_2();
+	//streams_case_3();
+	//streams_case_4();
+	//streams_case_5();
+	//streams_case_6();
+	//section_19_challenge_1();
+
 	//system("pause");
 } 
