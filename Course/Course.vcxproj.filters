@@ -220,6 +220,15 @@
     <Filter Include="Sections\src\Sections\Section_18">
       <UniqueIdentifier>{61a15e30-f177-49f7-b15a-0a49fac07d5d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections\Section_19">
+      <UniqueIdentifier>{f7389e97-209e-4b2a-8d9c-9767825a51f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_19">
+      <UniqueIdentifier>{d9590a18-cae4-42f6-b779-9a7d9da7ea77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_19\TextFiles">
+      <UniqueIdentifier>{98ad3d18-ba08-4de3-9157-198a19cebd0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -326,6 +335,9 @@
     </ClCompile>
     <ClCompile Include="Sections\src\Sections\Section_18\section_18.cpp">
       <Filter>Sections\src\Sections\Section_18</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_19\section_19.cpp">
+      <Filter>Sections\src\Sections\Section_19</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -440,8 +452,41 @@
     <ClInclude Include="Sections\include\Sections\Section_18\section_18.h">
       <Filter>Sections\include\Sections\Section_18</Filter>
     </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_19\section_19.h">
+      <Filter>Sections\include\Sections\Section_19</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test2txt.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test1.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test2.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\dust.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\dust_copy.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\responces.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\romeoandjuliet.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\file_to_copy.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\romeoandjuliet_out.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
   </ItemGroup>
 </Project>
