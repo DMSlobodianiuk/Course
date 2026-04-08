@@ -226,6 +226,9 @@
     <Filter Include="Sections\src\Sections\Section_19">
       <UniqueIdentifier>{d9590a18-cae4-42f6-b779-9a7d9da7ea77}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\src\Sections\Section_19\TextFiles">
+      <UniqueIdentifier>{98ad3d18-ba08-4de3-9157-198a19cebd0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -455,5 +458,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test2txt.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test1.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test2.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\dust.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\dust_copy.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\responces.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\romeoandjuliet.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\file_to_copy.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\romeoandjuliet_out.txt">
+      <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
   </ItemGroup>
 </Project>

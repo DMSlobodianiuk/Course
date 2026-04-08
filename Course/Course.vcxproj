@@ -203,6 +203,18 @@
   <ItemGroup>
     <None Include="..\.gitignore" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\dust.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\dust_copy.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\file_to_copy.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\responces.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\romeoandjuliet.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\romeoandjuliet_out.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test1.txt" />
+    <Text Include="Sections\src\Sections\Section_19\TextFiles\test2.txt" />
+    <Text Include="test2txt.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

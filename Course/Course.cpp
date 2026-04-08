@@ -136,6 +136,19 @@ int main()
 	//streams_case_5();
 	//streams_case_6();
 	//section_19_challenge_1();
-
+	//reading_from_file_case_1();
+	//reading_from_file_case_2();
+	//reading_from_file_case_3();
+	//reading_from_file_case_4();
+	//reading_from_file_case_5();
+	//section_19_challenge_2();
+	//section_19_challenge_3();
+	//writing_to_file_case_1();
+	//writing_to_file_case_2();
+	//section_19_challenge_4();
+	//string_stream_case_1();
+	//string_stream_case_2();
+	//string_stream_case_3();
+	   
 	//system("pause");
 } 
