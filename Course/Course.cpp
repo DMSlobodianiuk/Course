@@ -150,5 +150,14 @@ int main()
 	//string_stream_case_2();
 	//string_stream_case_3();
 	   
+	//section 20
+	//stl_case_1();
+	//stl_case_2();
+	//stl_case_3();
+	//stl_case_4();
+	//stl_case_5();
+	//stl_case_6();
+	stl_case_7();
+ 
 	//system("pause");
 } 
