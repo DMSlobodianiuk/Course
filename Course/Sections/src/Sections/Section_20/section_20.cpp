@@ -410,3 +410,676 @@ void stl_case_7() {
 	//test4();
 	test5();
 }
+
+class Person_Class {
+	friend std::ostream& operator<<(std::ostream& os, const Person_Class& p);
+	string name;
+	int age;
+public:
+	Person_Class() = default;
+	Person_Class(string name, int age)
+		:name{ name }, age{ age } {}
+	bool operator<(const Person_Class& rhs) const {
+		return this->age < rhs.age;
+	}
+	bool operator==(const Person_Class& rhs)const {
+		return (this->name == rhs.name && this->age == rhs.age);
+	}
+	string get_name() const { return name; }
+};
+
+std::ostream& operator<<(std::ostream& os, const Person_Class &p) {
+	os << p.name << ": " << p.age;
+	return os;
+}
+
+void find_test() {
+	cout << "\n===========================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5 };
+
+	auto loc = std::find(begin(vec), end(vec), 7);
+
+	if (loc != end(vec))
+		cout << "Found the number: " << *loc << endl;
+	else
+		cout << "Couldn't find the number" << endl;
+
+	std::list<Person_Class> players{
+		{"Larry",18},
+		{"Moe",20},
+		{"Curly",21}
+	};
+
+	auto loc1 = std::find(players.begin(), players.end(), Person_Class{ "1Moe",20 });
+	if (loc1 != players.end())
+		cout << "Found " << loc1->get_name() << endl;
+	else
+		//cout << (*loc1).get_name() << " not found" << endl;
+		//cout << loc1->get_name() << " not found" << endl;
+		cout << "Not found" << endl;
+}
+
+void count_test() {
+	cout << "\n=============================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5,1,2,1 };
+
+	int num = std::count(vec.begin(), vec.end(), -7);
+	cout << num << " occurrences found" << endl;
+}
+
+void count_if_test() {
+	cout << "\n=============================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5,1,2,1,100,1,1,1,7 };
+
+	int num = std::count_if(vec.begin(), vec.end(), [](int x) {return x % 2 == 0; });
+	cout <<" " << num << " even numbers found" << endl;
+
+	num = std::count_if(vec.begin(), vec.end(), [](int x) {return x % 2 != 0; });
+	cout << " " << num << " odd numbers found" << endl;
+
+	num = std::count_if(vec.begin(), vec.end(), [](int x) {return x >= 5; });
+	cout << " " << num << " elemens in vec are >= 5" << endl;
+}
+
+void replace_test() {
+	cout << "\n=============================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5,1,2,1,100,1,1,1,7 };
+
+	for (auto i : vec) {
+		cout << i << " ";
+	}
+	cout << endl;
+
+	std::replace(vec.begin(), vec.end(), 1 ,100);
+	for (auto i : vec) {
+		cout << i << " ";
+	}
+	cout << endl;
+}
+
+void all_of_test() {
+	cout << "\n=============================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5,1,2,1,0,1,1,1,7 };
+
+	if (std::all_of(vec.begin(), vec.end(), [](int x) {return x > 10;}))
+		cout << "All the elements are > 10" << endl;
+	else
+		cout << "Not all of the elements are > 10" << endl;
+
+	if (std::all_of(vec.begin(), vec.end(), [](int x) {return x < 20; }))
+		cout << "All the elements are < 20" << endl;
+	else
+		cout << "Not all of the elements are < 20" << endl;
+}
+
+void string_transform_test() {
+	cout << "\n=============================================" << endl;
+
+	string str1{ "This is a test" };
+	cout << "Before transform: " << str1 << endl;
+	std::transform(str1.begin(), str1.end(),str1.begin(), ::toupper);
+	cout << "After transform: " << str1 << endl;
+
+}
+
+void stl_case_8() {
+	//cout << "\n=============================================" << endl;
+
+	//vector<int> vec{ 1,2,3,4,5,1,2,1,100,1,1,1,7 };
+	//find_test();
+	//count_test();
+	//count_if_test();
+	//replace_test();
+	//all_of_test();
+	string_transform_test();
+}
+
+void array_display(const std::array<int, 5>& arr) {
+	cout << "[ ";
+	for (auto const& i : arr) {
+		cout << i << " ";
+	}
+	cout << "]" << endl;
+}
+
+void array_test1() {
+	cout << "\nTest1 ===========================================" << endl;
+	std::array<int, 5> arr1{1, 2, 3, 4, 5};
+	std::array<int, 5> arr2;
+
+	array_display(arr1);
+	array_display(arr2);
+
+	arr2 = { 10,20,30,40,5 };
+
+	array_display(arr1);
+	array_display(arr2);
+	
+	cout << "Size of arr1 is: " << arr1.size() << endl;
+	cout << "Size of arr2 is: " << arr2.size() << endl;
+
+	arr1[0] = 1000;
+	arr1.at(1) = 2000;
+	array_display(arr1);
+
+	cout << "Front of arr2: " << arr2.front() << endl;
+	cout << "Back of arr2: " << arr2.back() << endl;
+}
+
+void array_test2() {
+	cout << "\nTest2 ===========================================" << endl;
+
+	std::array<int, 5> arr1{ 1, 2, 3, 4, 5 };
+	std::array<int, 5> arr2{ 10, 20, 30, 40, 50 };
+
+	array_display(arr1);
+	array_display(arr2);
+
+	arr1.fill(0);
+	
+	array_display(arr1);
+	array_display(arr2);
+
+	arr1.swap(arr2);
+
+	array_display(arr1);
+	array_display(arr2);
+}
+
+void array_test3() {
+	cout << "\nTest3 ===========================================" << endl;
+	
+	std::array<int, 5> arr1{ 1, 2, 3, 4, 5 };
+
+	int* ptr = arr1.data();
+	cout << ptr << endl;
+	*ptr = 100000;
+
+	array_display(arr1);
+}
+
+void array_test4() {
+	cout << "\nTest4 ===========================================" << endl;
+	
+	std::array<int, 5> arr1{ 2, 1, 4, 5, 3 };
+
+	array_display(arr1);
+
+	std::sort(arr1.begin(), arr1.end());
+	array_display(arr1);
+}
+
+void array_test5() {
+	cout << "\nTest5 ===========================================" << endl;
+
+	std::array<int, 5> arr1{ 2, 1, 4, 5, 3 };
+
+	std::array<int, 5>::iterator min_num = std::min_element(arr1.begin(), arr1.end());
+	auto max_num = std::max_element(arr1.begin(), arr1.end());
+	cout << "min: " << *min_num << " , max: " << *max_num << endl;
+}
+
+void array_test6() {
+	cout << "\nTest6 ===========================================" << endl;
+
+	std::array<int, 5> arr1{ 2, 1, 4, 4, 3 };
+
+	auto adjacent = std::adjacent_find(arr1.begin(), arr1.end());
+	if (adjacent != arr1.end())
+		cout << "Adjacent element found with value: " << *adjacent << endl;
+	else
+		cout << "No adjacent elements found" << endl;
+}
+
+void array_test7() {
+	cout << "\nTest7 ===========================================" << endl;
+
+	std::array<int, 5> arr1{ 1,2,3,4,5 };
+
+	int sum = std::accumulate(arr1.begin(), arr1.end(), 0);
+	cout << "Sum of the elements in arr1 is: " << sum << endl;
+}
+
+void array_test8() {
+	cout << "\nTest8 ===========================================" << endl;
+
+	std::array<int, 10> arr1{ 1,2,3,1,2,3,3,3,3,3 };
+
+	int count = std::count(arr1.begin(), arr1.end(), 3);
+	cout << "Found 3: " << count << " times" << endl;
+}
+
+void array_test9() {
+	cout << "\nTest9 ===========================================" << endl;
+
+	std::array<int, 10> arr1{ 1,2,3,50,60,70,80,200,300,400 };
+
+	int count = std::count_if(arr1.begin(), arr1.end(),
+		[](int x) {return x > 10 && x < 200; });
+	cout << "Found " << count << " matches" << endl;
+}
+
+void stl_case_9() {
+	array_test1();
+	array_test2();
+	array_test3();
+	array_test4();
+	array_test5();
+	array_test6();
+	array_test7();
+	array_test8();
+	array_test9();
+}
+
+//void vector_display(const std::vector<int>& arr) {
+//	cout << "[ ";
+//	for (auto const& i : arr) {
+//		cout << i << " ";
+//	}
+//	cout << "]" << endl;
+//}
+
+void lambda_vector_display(const vector<int>& vec) {
+	cout << "[ ";
+	std::for_each(vec.begin(), vec.end(),
+		[](int x) {cout << x << " "; });
+	cout << "]" << endl;
+}
+
+template<typename T>
+void vector_display(const std::vector<T>& vec) {
+	cout << "[ ";
+	for (const auto& elem : vec)
+		cout << elem << " ";
+	cout << "]" << endl;
+}
+
+void vector_test1() {
+	cout << "\nTest1 ===========================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5 };
+	vector_display(vec);
+
+	vec = { 2,4,5,6 };
+	lambda_vector_display(vec);
+
+	vector<int> vec1(10, 100);
+	vector_display(vec1);
+}
+
+void vector_test2() {
+	cout << "\nTest2 ===========================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5 };
+
+	vector_display(vec);
+	cout << "\nvec size: " << vec.size() << endl;
+	cout << "vec max size: " << vec.max_size() << endl;
+	cout << "vec capacity: " << vec.capacity() << endl;
+	
+	vec.push_back(6);
+	vector_display(vec);
+	cout << "\nvec size: " << vec.size() << endl;
+	cout << "vec max size: " << vec.max_size() << endl;
+	cout << "vec capacity: " << vec.capacity() << endl;
+
+	vec.shrink_to_fit();
+	vector_display(vec);
+	cout << "\nvec size: " << vec.size() << endl;
+	cout << "vec max size: " << vec.max_size() << endl;
+	cout << "vec capacity: " << vec.capacity() << endl;
+
+	vec.reserve(100);
+	vector_display(vec);
+	cout << "\nvec size: " << vec.size() << endl;
+	cout << "vec max size: " << vec.max_size() << endl;
+	cout << "vec capacity: " << vec.capacity() << endl;
+
+}
+
+void vector_test3() {
+	cout << "\nTest3 ===========================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5 };
+	vector_display(vec);
+
+	vec[0] = 100;
+	vec.at(1) = 100;
+
+	display(vec);
+}
+
+void vector_test4() {
+	cout << "\nTest4 ===========================================" << endl;
+
+	vector<Person_Class> stooges;
+
+	Person_Class p1{ "Larry",18 };
+	vector_display(stooges);
+	
+	stooges.push_back(p1);
+	vector_display(stooges);
+
+	stooges.push_back(Person_Class{ "Moe",25 });
+	vector_display(stooges);
+
+	stooges.emplace_back("Curly", 30);
+	vector_display(stooges);
+}
+
+void vector_test5() {
+	cout << "\nTest5 ===========================================" << endl;
+
+	vector<Person_Class> stooges{
+		{"Larry",8},
+		{"Moe",12},
+		{"Curly",5}
+	};
+
+	vector_display(stooges);
+	cout << "\nFront: " << stooges.front() << endl;
+	cout << "Back: " << stooges.back() << endl;
+
+	stooges.pop_back();
+	vector_display(stooges);
+}
+
+void vector_test6() {
+	cout << "\nTest6 ===========================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5 };
+	vector_display(vec);
+	
+	vec.clear();
+	vector_display(vec);
+
+	vec = { 1,2,3,4,5,6,7,8,9,10 };
+	vector_display(vec);
+	vec.erase(vec.begin(), vec.begin() + 2);
+	vector_display(vec);
+	
+	vec = { 1,2,3,4,5,6,7,8,9,10 };
+	auto it = vec.begin();
+	while (it != vec.end()) {
+		if (*it % 2 == 0)
+			it = vec.erase(it);
+			//vec.erase(it);
+		else
+			it++;
+	}
+	vector_display(vec);
+}
+
+void vector_test7() {
+	cout << "\nTest7 ===========================================" << endl;
+
+	vector<int> vec1{ 1,2,3,4,5 };
+	vector<int> vec2{ 10,20,30,40,50 };
+
+	vector_display(vec1);
+	vector_display(vec2);
+	cout << endl;
+
+	vec2.swap(vec1);
+	vector_display(vec1);
+	vector_display(vec2);
+}
+
+void vector_test8() {
+	cout << "\nTest8 ===========================================" << endl;
+
+	vector<int> vec1{ 1,21,3,40,12 };
+
+	vector_display(vec1);
+	std::sort(vec1.begin(), vec1.end());
+	vector_display(vec1);
+}
+
+void vector_test9() {
+	cout << "\nTest9 ===========================================" << endl;
+
+	vector<int> vec1{ 1,2,3,4,5 };
+	vector<int> vec2{ 10,20 };
+
+	vector_display(vec1);
+	vector_display(vec2);
+	cout << endl;
+
+	std::copy(vec1.begin(), vec1.end(), std::back_inserter(vec2));
+	vector_display(vec1);
+	vector_display(vec2);
+	cout << endl;
+
+	//Copy_if the element is even
+	vec1 = { 1,2,3,4,5,6,7,8,9,10 };
+	vec2 = { 10,20 };
+	vector_display(vec1);
+	vector_display(vec2);
+	cout << endl;
+
+	std::copy_if(vec1.begin(), vec1.end(), std::back_inserter(vec2),
+		[](int x) {return x % 2 == 0; });
+	vector_display(vec1);
+	vector_display(vec2);
+}
+
+void vector_test10() {
+	cout << "\nTest10 ===========================================" << endl;
+
+	vector<int> vec1{1,2,3,4,5};
+	vector<int> vec2{10,20,30,40,50};
+	vector<int> vec3;
+
+	std::transform(vec1.begin(), vec1.end(), vec2.begin(),
+		std::back_inserter(vec3),
+		[](int x, int y) {return x * y; });
+	vector_display(vec3);
+}
+
+void vector_test11() {
+	cout << "\nTest11 ===========================================" << endl;
+
+	vector<int> vec1{1,2,3,4,5,6,7,8,9,10};
+	vector<int> vec2{100,200,300,400};
+
+	vector_display(vec1);
+	vector_display(vec2);
+	cout << endl;
+
+	auto it = std::find(vec1.begin(), vec1.end(), 5);
+	if (it != vec1.end()) {
+		cout << "inserting..." << endl;
+		vec1.insert(it, vec2.begin(), vec2.end());
+	}
+	else {
+		cout << "Sorry, 5 not found" << endl;
+	}
+	vector_display(vec1);
+}
+
+void stl_case_10() {
+	//std::vector<int> vec;
+	//cout << vec.max_size();
+
+	vector_test1();
+	vector_test2();
+	vector_test3();
+	vector_test4();
+	vector_test5();
+	vector_test6();
+	vector_test7();
+	vector_test8();
+	vector_test9();
+	vector_test10();
+	vector_test11();
+}
+
+template<typename T>
+void deque_display(const std::deque<T>& d) {
+	cout << " [ ";
+	for (const auto& elem : d)
+		cout << elem << " ";
+	cout << "]" << endl;
+}
+
+void deque_test1() {
+	cout << "\nTest 1 =======================================================" << endl;
+
+	std::deque<int> d{ 1,2,3,4,5 };
+	deque_display(d);
+
+	d = { 2,4,5,6 };
+	deque_display(d);
+
+	std::deque<int> d1(10, 100);
+	deque_display(d1);
+	
+	d[0] = 100;
+	d.at(1) = 200;
+	deque_display(d);
+}
+
+void deque_test2() {
+	cout << "\nTest 2 =======================================================" << endl;
+	
+	std::deque<int> d{ 0,0,0 };
+	deque_display(d);
+
+	d.push_back(10);
+	d.push_back(20);
+	deque_display(d);
+
+	d.push_front(100);
+	d.push_front(200);
+	deque_display(d);
+
+	cout << "Front: " << d.front() << endl;
+	cout << "Back : " << d.back() << endl;
+	cout << "Size : " << d.size() << endl;
+
+	d.pop_back();
+	d.pop_front();
+	deque_display(d);
+}
+
+void deque_test3() {
+	cout << "\nTest 3 =======================================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5,6,7,8,9,10 };
+	std::deque<int> d;
+
+	for (const auto& elem : vec) {
+		if (elem % 2 == 0)
+			d.push_back(elem);
+		else
+			d.push_front(elem);
+	}
+	deque_display(d);
+}
+
+void deque_test4() {
+	cout << "\nTest 4 =======================================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5,6,7,8,9,10 };
+	std::deque<int> d;
+	
+	for (const auto& elem : vec) {
+		d.push_front(elem);
+	}
+	deque_display(d);
+
+	d.clear();
+
+	for (const auto& elem : vec) {
+		d.push_back(elem);
+	}
+
+	deque_display(d);
+}
+
+void deque_test5() {
+	cout << "\nTest 5 =======================================================" << endl;
+
+	vector<int> vec{ 1,2,3,4,5,6,7,8,9,10 };
+	std::deque<int> d;
+
+	std::copy(vec.begin(), vec.end(), std::front_inserter(d));
+	deque_display(d);
+
+	d.clear();
+	
+	std::copy(vec.begin(), vec.end(), std::back_inserter(d));
+	deque_display(d);
+}
+
+void stl_case_11() {
+	
+	deque_test1();
+	deque_test2();
+	deque_test3();
+	deque_test4();
+	deque_test5();
+}
+
+bool is_palindrome(const std::string& s) {
+
+	std::deque<char> forward;
+	std::deque<char> backward;
+
+	for (auto& c : s) {
+		if (std::isalpha(c)) {
+			forward.push_back(toupper(c));
+			backward.push_front(toupper(c));
+		}
+	}
+	
+	if (forward == backward)
+		return true;
+	else
+		return false;
+}
+
+bool is_palindrome_proposed(const std::string& s) {
+	std::deque<char> d;
+
+	for (char c : s)
+		if (std::isalpha(c))
+			d.push_back(std::toupper(c));
+
+	char c1{};
+	char c2{};
+
+	while (d.size() > 1) {
+		c1 = d.front();
+		c2 = d.back();
+		d.pop_front();
+		d.pop_back();
+		if (c1 != c2)
+			return false;
+	}
+	return true;
+}
+
+void section_20_challenge_1(){
+
+	std::vector<std::string> test_strings{ "a", "aa", "aba", "abba", "abbcbba", "ab", "abc", "radar", "bob", "ana",
+		"avid diva", "Amore, Roma", "A Toyota's a toyota", "A Santa at NASA", "C++",
+		"A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!", "This is a palindrome", "palindrome" };
+
+	cout << std::boolalpha;
+	cout << std::setw(8) << std::left << "Result" << std::setw(8) << "String" << endl;
+	for (const auto& s : test_strings) {
+		cout << std::setw(8) << std::left<< is_palindrome(s) << s << endl;
+	}
+	cout << endl;
+
+	cout << std::setw(8) << std::left << "Result" << std::setw(8) << "String" << endl;
+	for (const auto& s : test_strings) {
+		cout << std::setw(8) << std::left << is_palindrome_proposed(s) << s << endl;
+	}
+}

@@ -157,7 +157,12 @@ int main()
 	//stl_case_4();
 	//stl_case_5();
 	//stl_case_6();
-	stl_case_7();
+	//stl_case_7();
+	//stl_case_8();
+	//stl_case_9();
+	//stl_case_10();
+	//stl_case_11();
+	//section_20_challenge_1();
  
 	//system("pause");
 } 

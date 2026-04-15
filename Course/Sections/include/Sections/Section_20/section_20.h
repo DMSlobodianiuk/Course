@@ -8,6 +8,10 @@
 #include <set>
 #include <map>
 #include <list>
+#include <cctype>
+#include <array>
+#include <deque>
+#include <iomanip>
 
 using std::cin;
 using std::cout;
@@ -22,3 +26,8 @@ void stl_case_4();
 void stl_case_5();
 void stl_case_6();
 void stl_case_7();
+void stl_case_8();
+void stl_case_9();
+void stl_case_10();
+void stl_case_11();
+void section_20_challenge_1();
