@@ -416,7 +416,8 @@ class Person_Class {
 	string name;
 	int age;
 public:
-	Person_Class() = default;
+	//Person_Class() = default;
+	Person_Class() :name{ "Unknown" }, age{ 0 } {};
 	Person_Class(string name, int age)
 		:name{ name }, age{ age } {}
 	bool operator<(const Person_Class& rhs) const {
@@ -1082,4 +1083,558 @@ void section_20_challenge_1(){
 	for (const auto& s : test_strings) {
 		cout << std::setw(8) << std::left << is_palindrome_proposed(s) << s << endl;
 	}
+}
+
+template<typename T>
+void list_display(const std::list<T>& l) {
+	cout << " [";
+	for (const auto& elem : l)
+		cout << elem << " ";
+	cout << "]" << endl;
+}
+
+void list_test1() {
+	cout << "\nTest 1 =======================================================" << endl;
+
+	std::list<int> l1{ 1,2,3,4,5 };
+	list_display(l1);
+
+	std::list<string> l2;
+	l2.push_back("Back");
+	l2.push_front("Front");
+	list_display(l2);
+
+	std::list<int> l3;
+	l3 = { 1,2,3,4,5,6,7,8,9,10 };
+	list_display(l3);
+
+	std::list<int> l4(10, 100);
+	list_display(l4);
+}
+
+void list_test2() {
+	cout << "\nTest 2 =======================================================" << endl;
+
+	std::list<int> l{ 1,2,3,4,5,6,7,8,9,10 };
+	list_display(l);
+	cout << "Size: " << l.size() << endl;
+	cout << "Front: " << l.front() << endl;
+	cout << "Back: " << l.back() << endl;
+
+	l.clear();
+	list_display(l);
+	cout << "Size: " << l.size() << endl;
+}
+
+void list_test3() {
+	cout << "\nTest 3 =======================================================" << endl;
+
+	std::list<int> l{ 1,2,3,4,5,6,7,8,9,10 };
+	list_display(l);
+
+	l.resize(5);
+	list_display(l);
+
+	l.resize(10);
+	list_display(l);
+
+	std::list<Person_Class> persons;
+	persons.resize(5);
+	list_display(persons);
+}
+
+void list_test4() {
+	cout << "\nTest 4 =======================================================" << endl;
+
+	std::list<int> l{ 1,2,3,4,5,6,7,8,9,10 };
+	list_display(l);
+
+	auto it = std::find(l.begin(), l.end(), 5);
+	if (it != l.end()) {
+		l.insert(it, 100);
+	}
+	list_display(l);
+
+	std::list<int> l2{ 1000,2000,3000 };
+	l.insert(it, l2.begin(), l2.end());
+	list_display(l);
+
+	std::advance(it, -4);	//point to the 100
+	cout << *it << endl;
+
+	l.erase(it);
+	list_display(l); 
+}
+
+void list_test5() {
+	cout << "\nTest 5 =======================================================" << endl;
+
+	std::list<Person_Class> stooges{
+		{"Larry",15},
+		{"Moe",25},
+		{"Curly",17}
+	};
+
+	list_display(stooges);
+	string name;
+	int age{};
+	cout << "\nEnter the name of the next stooge: ";
+	getline(cin, name);
+	cout << "Enter their ages: ";
+	cin >> age;
+
+	stooges.emplace_back(name, age);
+	list_display(stooges);
+
+	//Insert Frank before Moe
+	auto it = std::find(stooges.begin(), stooges.end(), Person_Class{ "Moe",25 });
+	if (it != stooges.end())
+		stooges.emplace(it, "Frank", 18);
+	list_display(stooges);
+}
+
+void list_test6() {
+	cout << "\nTest 6 =======================================================" << endl;
+
+	std::list<Person_Class> stooges{
+		{"Larry",15},
+		{"Moe",25},
+		{"Curly",17}
+	};
+
+	list_display(stooges);
+	stooges.sort();
+	list_display(stooges);
+}
+
+void stl_case_12() {
+	list_test1();
+	list_test2();
+	list_test3();
+	list_test4();
+	list_test5();
+	list_test6();
+}
+
+class Song {
+	friend std::ostream& operator<<(std::ostream& os, const Song& s);
+private:
+	string name;
+	string artist;
+	int raiting;
+public:
+	Song() : name{ "No name" }, artist{ "No arstist" }, raiting{ 0 } {};
+	Song(string name,string artist,int raiting) 
+		: name{ name }, artist{ artist }, raiting{ raiting } {};
+
+	string get_name() { return name; }
+	string get_artist() { return artist; }
+	int get_raiting() { return raiting; }
+
+	bool operator<(const Song& rhs) const {
+		return this->name < rhs.name;
+	}
+	bool operator==(const Song& rhs)const {
+		return this->name == rhs.name;
+	}
+};
+
+std::ostream& operator<<(std::ostream& os, const Song& s) {
+	os << std::setw(20) << std::left << s.name
+		<< std::setw(30) << std::left << s.artist
+		<< std::setw(2) << std::left << s.raiting;
+	return os;
+}
+
+void display_menu() {
+	cout << "\nF - Play First Song" << endl;
+	cout << "N - Play Next Song" << endl;
+	cout << "P - Play Previous Song" << endl;
+	cout << "A - Add and play a new Song at current location" << endl;
+	cout << "L - List the current playlist" << endl;
+	cout << "=============================================================" << endl;
+	cout << "Enter a selection(Q to quit): ";
+}
+
+void play_current_song(const Song& song) {
+	cout << "Playing:" << endl;
+	cout << song << endl;
+}
+
+void playlist_display(const std::list<Song>& playlist, const Song& current_song) {
+	for (auto &song : playlist) {
+		cout << song << endl;
+	}
+	cout << "Current song:" << endl;
+	cout << current_song << endl;
+}
+
+void section_20_challenge_2() {
+	bool controller{ true };
+	char selector{};
+
+	string name;
+	string artist;
+	int raiting;
+
+	std::list<Song> playlist{
+		{"God's Plan","Drake",5},
+		{"Never Be The Same","Camila Cabello",5},
+		{"Pray For Me","The Weekend and K.Lamar",4},
+		{"The Middle","Zedd, Maren Morris & Grey",5},
+		{"Wait","Maroone 5",4},
+		{"Whatever It Takes","Imagine Dragons",3}
+	};
+
+	std::list<Song>::iterator current_song = playlist.begin();
+
+	cout << "=============================================================";
+	do {
+		display_menu();
+		cin >> selector;
+
+		switch (selector) {
+			case 'F':
+			case 'f':{
+				cout << "Playing First Song" << endl;
+				play_current_song(playlist.front());
+				break;
+			}
+			case 'N':
+			case 'n': {
+				cout << "Playing Next Song" << endl;
+				current_song++;
+				if (current_song == playlist.end()) {
+					cout << "Wrapping to start of playlist" << endl;
+					current_song = playlist.begin();
+				}
+				play_current_song(*current_song);
+				break;
+			}
+			case 'P':
+			case 'p': {
+				cout << "Playing Previous Song" << endl;
+				if (current_song == playlist.begin()) {
+					cout << "Wrapping to end of playlist" << endl;
+					current_song = playlist.end();
+				}
+				current_song--;
+				play_current_song(*current_song);
+				break;
+			}
+			case 'A':
+			case 'a': {
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cout << "Adding and playing new song" << endl;
+				cout << "Enter song name: "; getline(cin, name);
+				cout << "Enter song artist: "; getline(cin,artist);
+				cout << "Enter your raiting: "; cin >> raiting;
+				playlist.insert(current_song, Song{ name,artist,raiting });
+				current_song--;
+				play_current_song(*current_song);
+
+				//playlist.emplace_front(name, artist, raiting);
+				//current_song = playlist.begin();
+				//play_current_song(*current_song);
+
+				break;
+			}
+			case 'L':
+			case 'l': {
+				cout << endl;
+				playlist_display(playlist, *current_song);
+				break;
+			}
+			case 'Q':
+			case 'q': {
+				controller = false;
+				break;
+				break;
+			}
+			default:{
+				cout << "Please, enter valid option: ";
+				cin >> selector;
+				break;
+			}
+		}
+	} while (controller);
+	cout << "Thanks for listenign!" << endl;
+}
+
+template <typename T>
+void set_display(const std::set<T>& s) {
+	cout << " [";
+	for (const auto& elem : s) {
+		cout << elem << " ";
+	}
+	cout << "]" << endl;
+}
+
+void set_test1() {
+	cout << "\nTest 1 =======================================================" << endl;
+
+	std::set<int> s1{ 1,4,3,5,2 };
+	set_display(s1);
+
+	s1 = { 1,2,3,1,1,2,2,3,3,4,5 };
+	set_display(s1);
+
+	s1.insert(0);
+	s1.insert(10);
+
+	set_display(s1);
+
+	if (s1.count(10))
+		cout << "10 is in the set" << endl;
+	else
+		cout << "10 is NOT in the set" << endl;
+
+	auto it = s1.find(5);
+	if (it != s1.end())
+		cout << "Found: " << *it << endl;
+
+	s1.clear();
+
+	set_display(s1);
+
+}
+
+void set_test2() {
+	cout << "\nTest 2 =======================================================" << endl;
+
+	std::set<Person_Class> stooges{
+		{"Larry",1},
+		{"Moe",2},
+		{"Curly",3}
+	};
+	set_display(stooges);
+
+	stooges.emplace("James", 50);
+	set_display(stooges);
+
+	stooges.emplace("Frank", 50);
+	set_display(stooges);
+
+	auto it = stooges.find(Person_Class{ "Moe",2 });
+	if (it != stooges.end())
+		stooges.erase(it);
+
+	set_display(stooges);
+
+	it = stooges.find(Person_Class("XXXX", 50));
+
+	if (it != stooges.end())
+		stooges.erase(it);
+	set_display(stooges);
+
+}
+
+void set_test3() {
+	cout << "\nTest 3 =======================================================" << endl;
+
+	std::set<string> s{ "A","B","C" };
+	set_display(s);
+
+	auto result = s.insert("D");
+	set_display(s);
+
+	cout << std::boolalpha;
+	cout << "first: " << *(result.first) << endl;
+	cout << "second: " << result.second << endl;
+
+	cout << endl;
+
+	result = s.insert("A");
+	set_display(s);
+
+	cout << "first: " << *(result.first) << endl;
+	cout << "second: " << result.second << endl;
+}
+
+void stl_case_13() {
+	set_test1();
+	set_test2();
+	set_test3();
+}
+ 
+template<typename T1, typename T2>
+void map_display(const std::map<T1, T2>& l) {
+	cout << " [ ";
+	for (const auto& elem : l)
+		cout << elem.first << ":" << elem.second << " ";
+	cout << "]" << endl;
+}
+
+void maps_display(const std::map<string, std::set<int>>& m) {
+	cout << "[ ";
+	for (const auto& elem : m) {
+		cout << elem.first << ": [ ";
+		for (const auto& set_elem : elem.second)
+			cout << set_elem << " ";
+		cout << "] ";
+	}
+	cout << "]" << endl;
+}
+
+void map_test1() {
+	cout << "\nTest 1 =======================================================" << endl;
+
+	std::map<string,int> m{
+		{"Larry",3},
+		{"Moe",1},
+		{"Curly",2}
+	};
+
+	map_display(m);
+
+	m.insert(std::pair<string, int>("Anna", 10));
+	map_display(m);
+
+	m.insert(std::make_pair("Joe", 5));
+	map_display(m);
+
+	m["Frank"] = 18;
+	map_display(m);
+
+	m["Frank"] += 10;
+	map_display(m);
+
+	m.erase("Frank"); 
+	map_display(m);
+
+	cout << "Count for Joe: " << m.count("Joe") << endl;
+	cout << "Count for Frank: " << m.count("Frank") << endl;
+
+	auto it = m.find("Larry");
+	if (it != m.end())
+		cout << "Found: " << it->first << ":" << it->second << endl;
+
+	m.clear();
+
+	map_display(m);
+}
+ 
+void map_test2() {
+	cout << "\nTest 2 =======================================================" << endl;
+
+	std::map<string, std::set<int>> grades{
+		{"Larry",{100,90}},
+		{"Moe",{94}},
+		{"Curly",{80,90,100}}
+	};
+
+	maps_display(grades);
+
+	grades["Larry"].insert(95);
+
+	maps_display(grades);
+
+	auto it = grades.find("Moe");
+	if (it != grades.end()) {
+		it->second.insert(1000);
+	}
+
+	maps_display(grades);
+}
+
+void stl_case_14() {
+	map_test1();
+	map_test2();
+}
+
+template<typename T1, typename T2>
+void map_display_word_count(const std::map<T1, T2>& l) {
+	cout << std::setw(15) << std::left << "Word";
+	cout << std::setw(10) << std::left << "Count" << endl;
+	cout << std::setw(25) << std::setfill('=') << "" << endl;
+	cout << std::setfill(' ');
+	for (const auto& elem : l)
+		cout << std::setw(15) << std::left << elem.first
+		<< std::setw(10) << std::left << elem.second
+		<< endl;;
+}
+
+string clean_string(const string& s) {
+	string result;
+	for (char c : s) {
+		if (c == '.' || c == ',' || c == ';' || c == ':')
+			continue;
+		else
+			result += c;
+	}
+	return result;
+}
+
+void section_20_challenge_3_part_1() {
+	std::ifstream in_file;
+	std::ofstream out_file;
+	string line;
+	string word;
+
+	std::map<string, int> word_count;
+
+	in_file.open("../Course/Sections/src/Sections/Section_20/words.txt");
+
+	if (!in_file)
+		std::cerr << "Problem opening input file" << endl;
+
+	cout << std::boolalpha;
+	while (std::getline(in_file, line)) {
+		std::stringstream ss(line);
+		while (ss >> word) {
+			word = clean_string(word);
+			word_count[word]++;      // increment the count for the word in the map
+		}
+	}
+
+	map_display_word_count(word_count);
+
+	in_file.close();
+}
+
+void maps_display_word_occurances(const std::map<string, std::set<int>>& m) {
+	cout << std::setw(15) << std::left << "Word";
+	cout << std::setw(10) << std::left << "Occurences" << endl;
+	cout << std::setw(25) << std::setfill('=') << "" << endl;
+	cout << std::setfill(' ');
+	for (const auto& elem : m) {
+		cout << std::setw(15) << std::left << elem.first;
+		cout << "[ ";
+		for (const auto& set_elem : elem.second)
+			cout << set_elem << " ";
+		cout << "] ";
+		cout << endl;
+	}
+	cout << endl;
+}
+
+void section_20_challenge_3_part_2() {
+	std::ifstream in_file;
+	std::ofstream out_file;
+	string line;
+	string word;
+	int line_count{1};
+
+	std::map<string, std::set<int>> word_occurances;
+
+	in_file.open("../Course/Sections/src/Sections/Section_20/words.txt");
+
+	if (!in_file)
+		std::cerr << "Problem opening input file" << endl;
+
+	cout << std::boolalpha;
+	while (std::getline(in_file, line)) {
+		
+		std::stringstream ss(line);
+		while (ss >> word) {
+			word = clean_string(word);
+			word_occurances[word].insert(line_count);      // increment the count for the word in the map
+		}
+		++line_count;
+	}
+
+	maps_display_word_occurances(word_occurances);
+
+	in_file.close();
 }

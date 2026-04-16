@@ -215,6 +215,7 @@
     <Text Include="Sections\src\Sections\Section_19\TextFiles\test.txt" />
     <Text Include="Sections\src\Sections\Section_19\TextFiles\test1.txt" />
     <Text Include="Sections\src\Sections\Section_19\TextFiles\test2.txt" />
+    <Text Include="Sections\src\Sections\Section_20\words.txt" />
     <Text Include="test2txt.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

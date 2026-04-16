@@ -163,6 +163,12 @@ int main()
 	//stl_case_10();
 	//stl_case_11();
 	//section_20_challenge_1();
- 
+	//stl_case_12();
+	//section_20_challenge_2();
+	//stl_case_13();
+	//stl_case_14();
+	//section_20_challenge_3_part_1();
+	//section_20_challenge_3_part_2();
+
 	//system("pause");
 } 

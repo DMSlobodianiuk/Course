@@ -500,5 +500,8 @@
     <Text Include="Sections\src\Sections\Section_19\TextFiles\romeoandjuliet_out.txt">
       <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
     </Text>
+    <Text Include="Sections\src\Sections\Section_20\words.txt">
+      <Filter>Sections\src\Sections\Section_20</Filter>
+    </Text>
   </ItemGroup>
 </Project>

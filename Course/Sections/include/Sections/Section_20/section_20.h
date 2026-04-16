@@ -1,6 +1,5 @@
 #pragma once
 #include <algorithm>
-#include <iostream>
 #include <numeric>
 #include <string>
 #include <utility>
@@ -12,6 +11,10 @@
 #include <array>
 #include <deque>
 #include <iomanip>
+#include <iterator> //for std::advance
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
 using std::cin;
 using std::cout;
@@ -31,3 +34,9 @@ void stl_case_9();
 void stl_case_10();
 void stl_case_11();
 void section_20_challenge_1();
+void stl_case_12();
+void section_20_challenge_2();
+void stl_case_13();
+void stl_case_14();
+void section_20_challenge_3_part_1();
+void section_20_challenge_3_part_2();
