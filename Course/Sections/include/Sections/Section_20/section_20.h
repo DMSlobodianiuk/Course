@@ -15,6 +15,8 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <stack>
+#include <queue>
 
 using std::cin;
 using std::cout;
@@ -40,3 +42,7 @@ void stl_case_13();
 void stl_case_14();
 void section_20_challenge_3_part_1();
 void section_20_challenge_3_part_2();
+void stl_case_15();
+void stl_case_16();
+void section_20_challenge_4();
+void stl_case_17();

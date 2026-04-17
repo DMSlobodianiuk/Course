@@ -1638,3 +1638,244 @@ void section_20_challenge_3_part_2() {
 
 	in_file.close();
 }
+
+template<typename T>
+void stack_display(std::stack<T> s) {
+	cout << " [ ";
+	while (!s.empty()) {
+		T elem = s.top();
+		s.pop();
+		cout << elem << " ";
+	}
+	cout << "]" << endl;
+}
+
+void stl_case_15() {
+	std::stack<int> s;
+	std::stack<int,std::vector<int>> s1;
+	std::stack<int,std::list<int>> s2;
+	std::stack<int,std::deque<int>> s3;
+
+	for (int i : {1, 2, 3, 4, 5})
+		s.push(i);
+	stack_display(s);
+
+	s.push(100);
+	stack_display(s);
+
+	s.pop();
+	s.pop();
+	stack_display(s);
+
+	while (!s.empty())
+		s.pop();
+	stack_display(s);
+
+	cout << "Size: " << s.size() << endl;
+	
+	s.push(10);
+	stack_display(s);
+	
+	s.top() = 100;
+	stack_display(s);
+}
+
+template<typename T>
+void queue_display(std::queue<T> q) {
+	cout << " [ ";
+	while (!q.empty()) {
+		T elem = q.front();
+		q.pop();
+		cout << elem << " ";
+	}
+	cout << "]" << endl;
+}
+
+void stl_case_16() {
+	
+	std::queue<int> q;
+	for (int i : {1, 2, 3, 4, 5})
+		q.push(i);
+	queue_display(q);
+	cout << "Front: " << q.front() << endl;
+	cout << "Back: " << q.back() << endl;
+
+	q.push(100);
+	queue_display(q);
+
+	q.pop();
+	q.pop();
+	queue_display(q);
+
+	while (!q.empty())
+		q.pop();
+	queue_display(q);
+
+	cout << "Size: " << q.size() << endl;
+
+	q.push(10);
+	q.push(100);
+	q.push(1000);
+	queue_display(q);
+
+	cout << "Front: " << q.front() << endl;
+	cout << "Back: " << q.back() << endl;
+
+	q.front() = 5;
+	q.back() = 5000;
+
+	queue_display(q);
+	cout << "Front: " << q.front() << endl;
+	cout << "Back: " << q.back() << endl;
+}
+
+bool is_palindrome_stack(const std::string& s) {
+
+	std::stack<char> forward;
+	std::stack<char> backward;
+
+	for (auto& c : s) {
+		if (std::isalpha(c)) {
+			forward.push(toupper(c));
+		}
+	}
+
+	string temp_s = s;
+	std::reverse(temp_s.begin(), temp_s.end());
+
+	for (auto& c : temp_s) {
+		if (std::isalpha(c)) {
+			backward.push(toupper(c));
+		}
+	}
+
+	if (forward == backward)
+		return true;
+	else
+		return false;
+}
+
+bool is_palindrome_stack_queue_proposed(const std::string& s) {
+	
+	std::stack<char> stk;
+	std::queue<char> q;
+
+	for(char c:s)
+		if (std::isalpha(c)) {
+			c = std::toupper(c);
+			q.push(c);
+			stk.push(c);
+		}
+
+	char c1{};
+	char c2{};
+
+	while (!q.empty()) {
+		c1 = q.front();
+		q.pop();
+		c2 = stk.top();
+		stk.pop();
+		if (c1 != c2)
+			return false;
+	}
+
+	return true;
+}
+
+bool is_palindrome_queue(const std::string& s) {
+	std::queue<char> forward;
+	std::queue<char> backward;
+
+	for (auto& c : s) {
+		if (std::isalpha(c)) {
+			forward.push(toupper(c));
+		}
+	}
+
+	string temp_s = s;
+	std::reverse(temp_s.begin(), temp_s.end());
+
+	for (auto& c : temp_s) {
+		if (std::isalpha(c)) {
+			backward.push(toupper(c));
+		}
+	}
+
+	if (forward == backward)
+		return true;
+	else
+		return false;
+}
+
+void section_20_challenge_4() {
+	
+	std::vector<std::string> test_strings{ "a", "aa", "aba", "abba", "abbcbba", "ab", "abc", "radar", "bob", "ana",
+		"avid diva", "Amore, Roma", "A Toyota's a toyota", "A Santa at NASA", "C++",
+		"A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!", "This is a palindrome", "palindrome" };
+
+	cout << std::boolalpha;
+	cout << "is_palindrome_stack" << endl;
+	cout << std::setw(8) << std::left << "Result" << std::setw(8) << "String" << endl;
+	for (const auto& s : test_strings) {
+		cout << std::setw(8) << std::left << is_palindrome_stack(s) << s << endl;
+	}
+	cout << endl;
+
+	cout << "is_palindrome_queue" << endl;
+	cout << std::setw(8) << std::left << "Result" << std::setw(8) << "String" << endl;
+	for (const auto& s : test_strings) {
+		cout << std::setw(8) << std::left << is_palindrome_queue(s) << s << endl;
+	}
+	cout << endl;
+
+	cout << "is_palindrome_stack_queue_proposed" << endl;
+	cout << std::setw(8) << std::left << "Result" << std::setw(8) << "String" << endl;
+	for (const auto& s : test_strings) {
+		cout << std::setw(8) << std::left << is_palindrome_stack_queue_proposed(s) << s << endl;
+	}
+}
+
+template<typename T>
+void priority_queue_display(std::priority_queue<T> pq) {
+	cout << "[ ";
+	while (!pq.empty()) {
+		T elem = pq.top();
+		pq.pop();
+		cout << elem << " ";
+	}
+	cout << "]" << endl;
+}
+
+void priority_queue_test1() {
+	cout << "\nTest 1 =======================================================" << endl;
+
+	std::priority_queue<int> pq;
+	for (int i : {3, 5, 7, 12, 23, 12, 4, 100, 0, 3, 5, 7})
+		pq.push(i);
+
+	cout << "Size: " << pq.size() << endl;
+	cout << "Top: " << pq.top() << endl;
+
+	priority_queue_display(pq);
+	pq.pop();
+	priority_queue_display(pq);
+}
+
+void priority_queue_test2() {
+	cout << "\nTest 2 =======================================================" << endl;
+
+	std::priority_queue<Person_Class> pq;
+	pq.push(Person_Class{ "A",10 });
+	pq.push(Person_Class{ "B",100 });
+	pq.push(Person_Class{ "C", 14});
+	pq.push(Person_Class{ "D",18 });
+	pq.push(Person_Class{ "E",7 });
+	pq.push(Person_Class{ "F",27 });
+
+	priority_queue_display(pq);
+}
+
+void stl_case_17() {
+	priority_queue_test1();
+	priority_queue_test2();
+}

@@ -169,6 +169,10 @@ int main()
 	//stl_case_14();
 	//section_20_challenge_3_part_1();
 	//section_20_challenge_3_part_2();
+	//stl_case_15();
+	//stl_case_16();
+	//section_20_challenge_4();
+	//stl_case_17();
 
 	//system("pause");
 } 
