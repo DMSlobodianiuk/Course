@@ -229,6 +229,12 @@
     <Filter Include="Sections\src\Sections\Section_19\TextFiles">
       <UniqueIdentifier>{98ad3d18-ba08-4de3-9157-198a19cebd0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sections\include\Sections\Section_20">
+      <UniqueIdentifier>{b4040072-2856-4771-90c1-11c508ca24a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sections\src\Sections\Section_20">
+      <UniqueIdentifier>{61b0dde4-3f62-46c3-bb9a-b540c470a3c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp">
@@ -338,6 +344,9 @@
     </ClCompile>
     <ClCompile Include="Sections\src\Sections\Section_19\section_19.cpp">
       <Filter>Sections\src\Sections\Section_19</Filter>
+    </ClCompile>
+    <ClCompile Include="Sections\src\Sections\Section_20\section_20.cpp">
+      <Filter>Sections\src\Sections\Section_20</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -455,6 +464,9 @@
     <ClInclude Include="Sections\include\Sections\Section_19\section_19.h">
       <Filter>Sections\include\Sections\Section_19</Filter>
     </ClInclude>
+    <ClInclude Include="Sections\include\Sections\Section_20\section_20.h">
+      <Filter>Sections\include\Sections\Section_20</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />
@@ -487,6 +499,9 @@
     </Text>
     <Text Include="Sections\src\Sections\Section_19\TextFiles\romeoandjuliet_out.txt">
       <Filter>Sections\src\Sections\Section_19\TextFiles</Filter>
+    </Text>
+    <Text Include="Sections\src\Sections\Section_20\words.txt">
+      <Filter>Sections\src\Sections\Section_20</Filter>
     </Text>
   </ItemGroup>
 </Project>

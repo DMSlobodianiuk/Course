@@ -150,5 +150,29 @@ int main()
 	//string_stream_case_2();
 	//string_stream_case_3();
 	   
+	//section 20
+	//stl_case_1();
+	//stl_case_2();
+	//stl_case_3();
+	//stl_case_4();
+	//stl_case_5();
+	//stl_case_6();
+	//stl_case_7();
+	//stl_case_8();
+	//stl_case_9();
+	//stl_case_10();
+	//stl_case_11();
+	//section_20_challenge_1();
+	//stl_case_12();
+	//section_20_challenge_2();
+	//stl_case_13();
+	//stl_case_14();
+	//section_20_challenge_3_part_1();
+	//section_20_challenge_3_part_2();
+	//stl_case_15();
+	//stl_case_16();
+	//section_20_challenge_4();
+	//stl_case_17();
+
 	//system("pause");
 } 
