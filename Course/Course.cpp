@@ -174,5 +174,12 @@ int main()
 	//section_20_challenge_4();
 	//stl_case_17();
 
+	//section 21
+	//lambda_case_1();
+	//lambda_case_2();
+	//lambda_case_3();
+	//lambda_case_4();
+	//lambda_case_5();
+
 	//system("pause");
 } 
