@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <functional>
+#include <numeric> //std::iota
 
 using std::cin;
 using std::cout;
