@@ -181,5 +181,9 @@ int main()
 	//lambda_case_4();
 	//lambda_case_5();
 
+	//section 23
+	//enum_case_1();
+	//enum_case_2();
+
 	//system("pause");
 } 
